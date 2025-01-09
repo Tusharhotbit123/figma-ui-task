@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", // Enables React JSX syntax
+    "baseUrl": ".", // Set the base directory for imports
+    "paths": {
+      "@src/*": ["./src/*"], // Alias for components directory
+      "@components/*": ["./src/components/*"], // Alias for components directory
+      "@utils/*": ["./src/utils/*"], // Alias for utils directory
+      "@assets/*": ["./src/assets/*"] // Alias for assets directory
+    }
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
