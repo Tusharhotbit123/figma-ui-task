@@ -1,13 +1,9 @@
 import './App.css';
-import Button from './components/Button/Index';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/layout/Layout';
 
 function App() {
-  return (
-    <div>
-      <Button />
-      {/* <Test /> */}
-    </div>
-  );
+  return <Layout />;
 }
 
 export default App;
