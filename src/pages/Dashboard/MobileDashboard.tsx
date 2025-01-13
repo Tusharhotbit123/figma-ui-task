@@ -1,10 +1,5 @@
-
 const MobileDashboard = () => {
-  return (
-    <div>
-        Dashboard    
-    </div>
-  )
-}
+  return <div>Dashboard</div>;
+};
 
-export default MobileDashboard
+export default MobileDashboard;

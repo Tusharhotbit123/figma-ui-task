@@ -1,5 +1,4 @@
-import { Notifications,Settings,Glass} from '../../icons';
-
+import { Notifications, Settings, Glass } from '../../icons';
 
 const DesktopNavbar = () => {
   return (
@@ -12,7 +11,7 @@ const DesktopNavbar = () => {
 
       <div className="flex justify-around   w-[650px]">
         <div className="flex items-center justify-center rounded-3xl bg-[#F5F7FA] w-72 h-14">
-          <div className='pr-2 pl-6'>
+          <div className="pr-2 pl-6">
             <Glass height="20" width="20" color="#718EBf " />
           </div>
           <input

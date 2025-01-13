@@ -1,12 +1,17 @@
+import { useState } from 'react';
 import Main from './Main/Main';
 import Sidebar from './Sidebar/Sidebar';
 import Navbar from './Navbar/Navbar';
+import useWindowWidth from '../../hooks/useWindowWidth';
 
 const Layout = () => {
+  const width = useWindowWidth();
+  // const [flag,setFlag]=useState(false)
+
   return (
     <div className="flex min-h-screen w-screen bg-slate-100">
       {/* Sidebar */}
-      <div className="min-h-screen bg-white w-56">
+      <div className={`min-h-screen bg-white w-56 ${width>=1024?"block":"hidden"}`}>
         <Sidebar />
       </div>
 

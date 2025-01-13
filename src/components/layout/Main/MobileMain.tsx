@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const MobileMain = () => {
-  return (
-    <div>
-       Main      
-    </div>
-  )
-}
+  return <div>Main</div>;
+};
 
-export default MobileMain
+export default MobileMain;

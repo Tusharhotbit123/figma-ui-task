@@ -7,8 +7,8 @@ const DesktopMain = () => {
     <div>
       <Router>
         <Routes>
-          <Route path="/settings" element={<Setting/>}/>
-          <Route path="/" element={<Dashboard/>}/> 
+          <Route path="/settings" element={<Setting />} />
+          <Route path="/" element={<Dashboard />} />
         </Routes>
       </Router>
     </div>

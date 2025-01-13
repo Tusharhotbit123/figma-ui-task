@@ -12,7 +12,7 @@ const DesktopSideBar = () => {
         </div>
         <h1 className="text-[#343C6A] mr-10">Soar task</h1>
       </div>
-      
+
       {/* Sidebar Buttons */}
       <div className="flex flex-col items-center flex-grow bg-white overflow-auto">
         {arr.map((element) => {

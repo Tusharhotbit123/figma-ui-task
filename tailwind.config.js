@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        'lg': '28px',
+        lg: '28px',
       },
     },
   },

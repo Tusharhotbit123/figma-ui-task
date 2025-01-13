@@ -1,6 +1,10 @@
-import { IIconProps } from "./type";
+import { IIconProps } from './type';
 
-export const Glass = ({width="20",height="20",color="#718EBf"}:IIconProps) => {
+export const Glass = ({
+  width = '20',
+  height = '20',
+  color = '#718EBf',
+}: IIconProps) => {
   return (
     <svg
       width={width}

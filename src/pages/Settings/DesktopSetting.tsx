@@ -10,12 +10,12 @@ const DesktopSetting = () => {
         <button className="ml-8 mr-8 text-[#718EBF]">Preferences</button>
         <button className="ml-8 mr-8 text-[#718EBF]">Security</button>
       </div>
-      <div className='flex ml-14'>
+      <div className="flex ml-14">
         <img
           className="h-[91px] w-[98px] rounded-full"
           src="https://s3-alpha-sig.figma.com/img/57d3/d250/790e98129931897251abd3915a931233?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvrTbfYnuQOh7DgZbCVns4pBewutzVx36-y8zVmIy7QRsBGU5Q~DtYVN3qkxXkfO~tFYNtPO48B3rNNlGjxKFLkZVa3xE72FQRiP-CdxbYC7vkuEmUJOkqsMvceDTWK6fOGaD0KiVe2bhLOKlx2EJeQuCn-DKLcNfM6CbUm1AnuMisp90DnIkXA2laLh4oxU1jnBZpm4kbDDbRs9lyJu73Rr-jEP5O0JCMKGBqg4Y9lywumjPXyFtcc6lwda7NYWySxTvnXcWqDtGzCw78No0BeplZONjofNAijChAv3GRrm9PoR5-ICi611e74OIOOtl-XJSo4aSMahuSeUWDXeVQ__"
         />
-        <form className='flex flex-col ml-14'>
+        <form className="flex flex-col ml-14">
           <div className="flex ">
             <label className="flex flex-col font-normal text-[18px] h-[80px] mr-8">
               Your Name
@@ -96,9 +96,11 @@ const DesktopSetting = () => {
               />
             </label>
           </div>
-           <div className='mt-10 flex justify-end'>
-            <button className='w-[190px] h-[50px] bg-[#232323] text-white rounded-2xl'>Save</button>
-           </div>
+          <div className="mt-10 flex justify-end">
+            <button className="w-[190px] h-[50px] bg-[#232323] text-white rounded-2xl">
+              Save
+            </button>
+          </div>
         </form>
       </div>
     </div>

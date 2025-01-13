@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const MobileSetting = () => {
-  return (
-    <div>
-      Dashboard
-    </div>
-  )
-}
+  return <div>Dashboard</div>;
+};
 
-export default MobileSetting
+export default MobileSetting;
