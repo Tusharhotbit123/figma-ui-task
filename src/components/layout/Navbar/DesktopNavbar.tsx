@@ -1,5 +1,6 @@
 import { Notifications, Settings, Glass } from '../../icons';
 
+
 const DesktopNavbar = () => {
   return (
     <div className=" h-24 bg-white w-full  flex items-center justify-between">

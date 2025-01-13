@@ -1,4 +1,4 @@
-import { Gylph, Home, User } from '../../icons';
+import { Gylph, Home, User,Investments,Credit,Loan,Services,Economics,SettingIcon} from '../../icons';
 
 const arr = [
   {
@@ -19,32 +19,32 @@ const arr = [
   {
     id: 4,
     title: 'Investments',
-    image: Gylph,
+    image: Investments,
   },
   {
     id: 5,
     title: 'Credit Cards',
-    image: Gylph,
+    image: Credit,
   },
   {
     id: 6,
     title: 'Loans',
-    image: Gylph,
+    image: Loan,
   },
   {
     id: 7,
     title: 'Services',
-    image: Gylph,
+    image: Services,
   },
   {
     id: 8,
     title: 'My Privileges',
-    image: Gylph,
+    image: Economics,
   },
   {
     id: 9,
     title: 'Setting',
-    image: Gylph,
+    image: SettingIcon,
   },
 ];
 
