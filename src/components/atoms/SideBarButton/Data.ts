@@ -1,4 +1,4 @@
-import { Gylph, Home, User } from '../icons';
+import { Gylph, Home, User } from '../../icons';
 
 const arr = [
   {

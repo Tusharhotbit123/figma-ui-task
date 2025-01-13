@@ -9,7 +9,7 @@ const Layout = () => {
   // const [flag,setFlag]=useState(false)
 
   return (
-    <div className="flex min-h-screen w-screen bg-slate-100">
+    <div className="flex min-h-screen min-w-full bg-slate-100">
       {/* Sidebar */}
       <div className={`min-h-screen bg-white w-56 ${width>=1024?"block":"hidden"}`}>
         <Sidebar />
@@ -23,7 +23,7 @@ const Layout = () => {
         </div>
 
         {/* Main - take the remaining space */}
-        <div className="flex-grow flex justify-center items-center overflow-auto">
+        <div className="flex-grow flex justify-center items-center overflow-auto min-w-full">
           <Main />
         </div>
       </div>

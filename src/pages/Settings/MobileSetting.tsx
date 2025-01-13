@@ -3,7 +3,7 @@ import Form from '../../components/uiComponents/Form';
 
 const MobileSetting = () => {
   return(
-    <div>
+    <div className='flex justify-center mt-6 mb-14'>
         <Form/>
     </div>
   );

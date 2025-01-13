@@ -1,6 +1,6 @@
 import { Logo } from '../../icons';
-import SideBarButton from '../../atoms/SideBarButton';
-import arr from '../../atoms/Data';
+import SideBarButton from '../../atoms/SideBarButton/SideBarButton';
+import arr from '../../atoms/SideBarButton/Data';
 
 const DesktopSideBar = () => {
   return (
