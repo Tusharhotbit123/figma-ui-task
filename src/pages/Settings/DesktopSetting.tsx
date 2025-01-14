@@ -2,7 +2,7 @@ import React from 'react';
 
 const DesktopSetting = () => {
   return (
-    <div className="border mt-10 mb-40 rounded-2xl h-[717px] w-[1110px] bg-white">
+    <div className="border ml-20 mt-10 mb-40 rounded-2xl h-[717px] w-[1110px] bg-white">
       <div className="flex mt-8 ml-8 mr-8 mb-10 h-[30px] w-[1050px] ">
         <button className="ml-4 mr-8 pl-4 pr-4 text-black border-b-[3px] border-b-black">
           Edit Profile
