@@ -5,12 +5,10 @@ import Dashboard from '../../../pages/Dashboard/Dashboard';
 const DesktopMain = () => {
   return (
     <div>
-      <Router>
-        <Routes>
-          <Route path="/settings" element={<Setting />} />
-          <Route path="/" element={<Dashboard />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/setting" element={<Setting />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
     </div>
   );
 };

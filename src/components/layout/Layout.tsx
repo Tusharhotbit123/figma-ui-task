@@ -11,7 +11,9 @@ const Layout = () => {
   return (
     <div className="flex min-h-screen min-w-full bg-slate-100">
       {/* Sidebar */}
-      <div className={`min-h-screen bg-white w-56 ${width>=1024?"block":"hidden"}`}>
+      <div
+        className={`min-h-screen bg-white w-56 ${width >= 1024 ? 'block' : 'hidden'}`}
+      >
         <Sidebar />
       </div>
 
@@ -23,7 +25,7 @@ const Layout = () => {
         </div>
 
         {/* Main - take the remaining space */}
-        <div className="flex-grow flex justify-center items-center overflow-auto min-w-full">
+        <div className="overflow-auto min-w-full">
           <Main />
         </div>
       </div>

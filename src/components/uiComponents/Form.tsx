@@ -50,21 +50,24 @@ const Form = () => {
       </div>
       <div>
         <FormProvider {...method}>
-          <form onSubmit={method.handleSubmit(onSubmit)} className=" mt-6 mb-12 flex flex-col items-center">
-           {
-            arr.map((field)=>{
-              return(
+          <form
+            onSubmit={method.handleSubmit(onSubmit)}
+            className=" mt-6 mb-12 flex flex-col items-center"
+          >
+            {arr.map((field) => {
+              return (
                 <FormInput
-                 name={field.name}
-                 label={field.label}
-                 validation={field.validation}
-                 type={field.type}
-                 placeholder={field.placeholder}  
+                  name={field.name}
+                  label={field.label}
+                  validation={field.validation}
+                  type={field.type}
+                  placeholder={field.placeholder}
                 />
-              )
-            })
-           }
-           <button className='w-[285px] h-10 border rounded-lg text-white bg-[#232323] font-medium text-base'>Save</button>
+              );
+            })}
+            <button className="w-[285px] h-10 border rounded-lg text-white bg-[#232323] font-medium text-base">
+              Save
+            </button>
           </form>
         </FormProvider>
       </div>

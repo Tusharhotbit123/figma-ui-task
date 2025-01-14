@@ -4,13 +4,11 @@ import Dashboard from '../../../pages/Dashboard/Dashboard';
 
 const MobileMain = () => {
   return (
-    <div className='min-w-full'>
-      <Router>
-        <Routes>
-          <Route path="/settings" element={<Setting />} />
-          <Route path="/" element={<Dashboard />} />
-        </Routes>
-      </Router>
+    <div className="min-w-full">
+      <Routes>
+        <Route path="/setting" element={<Setting />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
     </div>
   );
 };

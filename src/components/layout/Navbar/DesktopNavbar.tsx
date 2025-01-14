@@ -1,12 +1,17 @@
 import { Notifications, Settings, Glass } from '../../icons';
-
+import { useLocation } from 'react-router-dom';
 
 const DesktopNavbar = () => {
+  const location = useLocation();
+  if (!location || !location.pathname) {
+    return <div>Error: No location found!</div>;
+  }
+
   return (
     <div className=" h-24 bg-white w-full  flex items-center justify-between">
       <div className="flex justify-start  w-96 pl-10">
         <h1 className="text-[#343C6A] font-semibold text-lg justify-start">
-          Setting
+          {location.pathname === '/setting' ? 'Setting' : 'Dashboard'}
         </h1>
       </div>
 

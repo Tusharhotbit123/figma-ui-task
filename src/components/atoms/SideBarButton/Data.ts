@@ -1,4 +1,14 @@
-import { Gylph, Home, User,Investments,Credit,Loan,Services,Economics,SettingIcon} from '../../icons';
+import {
+  Gylph,
+  Home,
+  User,
+  Investments,
+  Credit,
+  Loan,
+  Services,
+  Economics,
+  SettingIcon,
+} from '../../icons';
 
 const arr = [
   {

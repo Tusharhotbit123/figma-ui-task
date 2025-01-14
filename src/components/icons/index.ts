@@ -6,9 +6,9 @@ export * from './Settings2';
 export * from './Gylph';
 export * from './Home';
 export * from './User';
-export * from "./Investments"
-export * from "./Credit"
-export * from "./Loan"
-export * from "./Services"
-export * from "./Economics"
-export * from "./SettingIcon"
+export * from './Investments';
+export * from './Credit';
+export * from './Loan';
+export * from './Services';
+export * from './Economics';
+export * from './SettingIcon';

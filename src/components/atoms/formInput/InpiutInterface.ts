@@ -1,9 +1,9 @@
-import { RegisterOptions } from "react-hook-form";
+import { RegisterOptions } from 'react-hook-form';
 
 export interface inputForm {
-    name:string,
-    label:string,
-    validation?:RegisterOptions,
-    type:string,
-    placeholder:string,
+  name: string;
+  label: string;
+  validation?: RegisterOptions;
+  type: string;
+  placeholder: string;
 }
