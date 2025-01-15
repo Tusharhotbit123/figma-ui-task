@@ -7,12 +7,20 @@ interface props {
   cardHolder?: string;
   bottom?: string;
   balance?: string;
-  borderBottom?:string;
-  color?:string;
-  ellipse?:string;
+  borderBottom?: string;
+  color?: string;
+  ellipse?: string;
 }
 
-const Card = ({ cName, cardHolder, bottom, balance,borderBottom,color,ellipse}: props) => {
+const Card = ({
+  cName,
+  cardHolder,
+  bottom,
+  balance,
+  borderBottom,
+  color,
+  ellipse,
+}: props) => {
   return (
     <div className={cName}>
       <div className="w-full h-[165px]  ">
@@ -23,7 +31,7 @@ const Card = ({ cName, cardHolder, bottom, balance,borderBottom,color,ellipse}: 
           </div>
           <div className="mt-1 relative left-10">
             {/* <img className="w-9 h-9 relative left-8" src={Chip} /> */}
-            <Chip color={color}/>
+            <Chip color={color} />
           </div>
         </div>
         <div className="flex justify-around  mt-[33px]">
@@ -38,13 +46,15 @@ const Card = ({ cName, cardHolder, bottom, balance,borderBottom,color,ellipse}: 
         </div>
       </div>
       <div className={bottom}>
-        <h1 className="font-semibold text-[22px] relative left-2">3778**** ****1234</h1>
+        <h1 className="font-semibold text-[22px] relative left-2">
+          3778**** ****1234
+        </h1>
         <div className={borderBottom}>
-          <div className='relative left-3'>
+          <div className="relative left-3">
             <Ellipse color={ellipse} />
           </div>
           <div>
-            <Ellipse color={ellipse}/>
+            <Ellipse color={ellipse} />
           </div>
         </div>
       </div>

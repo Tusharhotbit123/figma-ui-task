@@ -1,6 +1,10 @@
 import { IIconProps } from './type';
 
-const Ellipse = ({width="30",height="30",color="#9199AF"}:IIconProps) => {
+const Ellipse = ({
+  width = '30',
+  height = '30',
+  color = '#9199AF',
+}: IIconProps) => {
   return (
     <svg
       width={width}
@@ -14,4 +18,4 @@ const Ellipse = ({width="30",height="30",color="#9199AF"}:IIconProps) => {
   );
 };
 
-export default Ellipse
+export default Ellipse;

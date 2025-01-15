@@ -1,6 +1,10 @@
 import { IIconProps } from './type';
 
-const Paypal = ({height="55",width="55",color="#E7EDFF"}:IIconProps) => {
+const Paypal = ({
+  height = '55',
+  width = '55',
+  color = '#E7EDFF',
+}: IIconProps) => {
   return (
     <svg
       width={width}
@@ -18,4 +22,4 @@ const Paypal = ({height="55",width="55",color="#E7EDFF"}:IIconProps) => {
   );
 };
 
-export default Paypal
+export default Paypal;

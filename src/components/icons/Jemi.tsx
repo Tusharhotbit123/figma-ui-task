@@ -1,6 +1,10 @@
 import { IIconProps } from './type';
 
-const Jemi = ({height="55",width="55",color="#16DBCC"}:IIconProps) => {
+const Jemi = ({
+  height = '55',
+  width = '55',
+  color = '#16DBCC',
+}: IIconProps) => {
   return (
     <svg
       width={width}
@@ -18,4 +22,4 @@ const Jemi = ({height="55",width="55",color="#16DBCC"}:IIconProps) => {
   );
 };
 
-export default Jemi
+export default Jemi;

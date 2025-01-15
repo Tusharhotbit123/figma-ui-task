@@ -12,8 +12,8 @@ export * from './Loan';
 export * from './Services';
 export * from './Economics';
 export * from './SettingIcon';
-export * from "./Ellipse"
-export * from "./Group"
-export * from "./Paypal"
-export * from "./Jemi"
-export * from "./Chip"
+export * from './Ellipse';
+export * from './Group';
+export * from './Paypal';
+export * from './Jemi';
+export * from './Chip';

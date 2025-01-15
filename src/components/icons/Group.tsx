@@ -1,6 +1,10 @@
 import { IIconProps } from './type';
 
-const Group = ({width="55",height="55",color="#FFBB38"}:IIconProps) => {
+const Group = ({
+  width = '55',
+  height = '55',
+  color = '#FFBB38',
+}: IIconProps) => {
   return (
     <svg
       width={width}
@@ -26,4 +30,4 @@ const Group = ({width="55",height="55",color="#FFBB38"}:IIconProps) => {
   );
 };
 
-export default Group
+export default Group;
