@@ -1,6 +1,6 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
-import { ChartOptions } from 'chart.js';
+import { ChartOptions, Chart } from 'chart.js';
 import 'chart.js/auto';
 
 const BarChart = () => {
@@ -8,8 +8,8 @@ const BarChart = () => {
     labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri'],
     datasets: [
       {
-        label: 'Monthly Revenue',
-        data: [12, 15, 3, 5, 2, 3, 20],
+        label: 'Withdraw', // Black bar
+        data: [480, 330, 310, 380, 130, 400, 320],
         backgroundColor: [
           '#232323',
           '#232323',
@@ -29,8 +29,37 @@ const BarChart = () => {
           '#232323',
         ],
         borderWidth: 1,
-        barThickness: 20,
-        borderRadius:50,
+        borderRadius: [20, 20, 20, 20],
+        borderSkipped: false,
+        categoryPercentage: 0.5,
+        barPercentage: 0.4,
+      },
+      {
+        label: 'Diposit', // Blue bar
+        data: [230, 120, 260, 380, 240, 240, 320],
+        backgroundColor: [
+          '#396AFF',
+          '#396AFF',
+          '#396AFF',
+          '#396AFF',
+          '#396AFF',
+          '#396AFF',
+          '#396AFF',
+        ],
+        borderColor: [
+          '#396AFF',
+          '#396AFF',
+          '#396AFF',
+          '#396AFF',
+          '#396AFF',
+          '#396AFF',
+          '#396AFF',
+        ],
+        borderWidth: 1,
+        borderRadius: [20, 20, 20, 20],
+        borderSkipped: false,
+        categoryPercentage: 0.5,
+        barPercentage: 0.4,
       },
     ],
   };
@@ -39,19 +68,36 @@ const BarChart = () => {
     responsive: true,
     plugins: {
       legend: {
-        position: 'top', // Correctly typed as 'top'
+        position: 'top',
         align: 'end',
         labels: {
           font: {
-            size: 14,
-            weight: 'bold',
+            size: 15,
+            weight: 'normal',
+            
           },
-          color: '#333',
+          padding: 30,
+          boxWidth: 100,
+          boxHeight: 100,
+          color: '#718EBF',
+          usePointStyle: true,
+          generateLabels: function (chart) {
+            // Get the default legend labels
+            const labels =
+              Chart.defaults.plugins.legend.labels.generateLabels(chart);
+
+            // Sort the labels so that "Withdraw" (blue) comes first
+            return labels.sort((a, b) => {
+              if (a.text === 'Diposit') return -1; // Move "Withdraw" first
+              if (b.text === 'Withdraw') return 1;
+              return 0;
+            });
+          },
         },
       },
       title: {
-        display: true,
-        text: 'Weekly Activity',
+        display:false,
+        text: '',
         align: 'start',
         position: 'top',
         font: {
@@ -65,31 +111,49 @@ const BarChart = () => {
       },
     },
 
+    layout: {
+      padding: {
+        left: 10,
+        right: 10,
+        top: 10,
+        bottom: 10,
+      },
+    },
+
     scales: {
       x: {
         grid: {
           display: false,
         },
         ticks: {
-          // Align bar names at the end of the chart
           padding: 20,
           font: {
-            size: 14,
-            weight: 'bold',
+            size: 13,
           },
-          color: '#333',
+          color: '#718EBF',
+          
         },
       },
       y: {
         grid: {
-          display: true, // Optional: Show grid lines on the Y-axis
+          display: true,
+          color:"#F3F3F5",
+        },
+        ticks: {
+          font: {
+            size: 13,
+          },
+          color: '#718EBF',
+        },
+        border: {
+          color: 'transparent', // Hide the Y-axis line (border)
         },
       },
     },
   };
 
   return (
-    <div>
+    <div className='bg-white w-[730px] h-[322px] flex items-center justify-center rounded-3xl m-3'>
       <Bar data={data} options={options} />
     </div>
   );

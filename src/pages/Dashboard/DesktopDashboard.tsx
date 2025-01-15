@@ -1,5 +1,6 @@
 import BarChart from '../../components/uiComponents/BarChart';
 import Card from '../../components/uiComponents/Card';
+import PieChart from '../../components/uiComponents/PieChart';
 import Transaction from '../../components/uiComponents/Transaction';
 
 const DesktopDashboard = () => {
@@ -49,11 +50,14 @@ const DesktopDashboard = () => {
           <Transaction />
         </div>
       </div>
-      <div className="bar-chart piechart">
-        <div className="bar-chart">
+      <div className="bar-chart piechart mt-6 border flex">
+        <div className="bar-chart flex flex-col  mb-5 ml-10 mr-10">
+          <h1 className='text-[#343C6A] font-semibold text-[22px]  relative left-3'>Weekly Activity</h1>
             <BarChart/>
         </div>
-        <div className="piechart"></div>
+        <div className="piechart">
+          <PieChart/>
+        </div>
       </div>
       <div className="line-chart"></div>
     </div>
