@@ -4,7 +4,7 @@ import MobileSetting from './MobileSetting';
 const Setting = () => {
   const width = useWindowWidth();
 
-  if (width >= 1024) return <DesktopSetting />;
+  if (width >= 750) return <DesktopSetting />;
   else return <MobileSetting />;
 };
 

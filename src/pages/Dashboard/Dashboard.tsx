@@ -4,7 +4,7 @@ import MobileDashboard from './MobileDashboard';
 const Dashboard = () => {
   const width = useWindowWidth();
 
-  if (width >= 1024) return <DesktopDashboard />;
+  if (width >=750) return <DesktopDashboard />;
   else return <MobileDashboard />;
 };
 

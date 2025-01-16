@@ -3,7 +3,11 @@ import { Bar } from 'react-chartjs-2';
 import { ChartOptions, Chart } from 'chart.js';
 import 'chart.js/auto';
 
-const BarChart = () => {
+interface className{
+  className?:string,
+}
+
+const BarChart = ({className}:className) => {
   const data = {
     labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri'],
     datasets: [
@@ -151,7 +155,7 @@ const BarChart = () => {
   };
 
   return (
-    <div className="bg-white w-[730px] h-[322px] flex items-center justify-center rounded-3xl m-3">
+    <div className={className}>
       <Bar data={data} options={options} />
     </div>
   );

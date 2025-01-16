@@ -57,7 +57,7 @@ const DesktopDashboard = () => {
           <h1 className="text-[#343C6A] font-semibold text-[22px]  relative left-3">
             Weekly Activity
           </h1>
-          <BarChart />
+          <BarChart className="bg-white w-[730px] h-[322px] flex items-center justify-center rounded-3xl m-3" />
         </div>
         <div className="piechart   flex flex-col relative left-16 ">
           <h1 className="text-[#343C6A] font-semibold text-[22px] mb-4">
@@ -73,14 +73,14 @@ const DesktopDashboard = () => {
           <h1 className="text-[#343C6A] font-semibold text-[22px] mb-5">
             Quick Transfer
           </h1>
-          <QuickTransfer />
+          <QuickTransfer className="bg-white w-[445px] h-[276px] rounded-3xl flex flex-col items-center justify-around" />
         </div>
         <div className="balance-history flex flex-col justify-center ml-7">
           <h1 className="font-semibold text-[22px] text-[#343C6A] mt-6 mb-5">
             Balance History
           </h1>
 
-          <BalanceChart />
+          <BalanceChart className=" h-[276px] w-[550px] bg-white flex items-center justify-center  rounded-3xl pt-3 pb-3" />
         </div>
       </div>
     </div>

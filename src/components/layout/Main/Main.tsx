@@ -5,7 +5,7 @@ import useWindowWidth from '../../../hooks/useWindowWidth';
 const Main = () => {
   const width = useWindowWidth();
 
-  if (width >= 1024) return <DesktopMain />;
+  if (width >= 750) return <DesktopMain />;
   else return <MobileMain />;
 };
 

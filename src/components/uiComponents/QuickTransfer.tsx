@@ -5,9 +5,13 @@ import Workman from '../../assets/images/Workman.png';
 import Arrow from '../../assets/images/Arrow.png';
 import Vector from '../icons/Vector';
 
-const QuickTransfer = () => {
+interface props{
+  className?:string,
+}
+
+const QuickTransfer = ({className}:props) => {
   return (
-    <div className="bg-white w-[445px] h-[276px] rounded-3xl flex flex-col items-center justify-around">
+    <div className={className}>
       <div className="flex justify-around items-center w-[394px] h-[127px]">
         <div className="flex flex-col items-center justify-center">
           <img src={Livia} />
