@@ -17,3 +17,4 @@ export * from './Group';
 export * from './Paypal';
 export * from './Jemi';
 export * from './Chip';
+export * from './Vector';

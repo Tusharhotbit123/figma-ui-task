@@ -74,7 +74,6 @@ const BarChart = () => {
           font: {
             size: 15,
             weight: 'normal',
-            
           },
           padding: 30,
           boxWidth: 100,
@@ -96,7 +95,7 @@ const BarChart = () => {
         },
       },
       title: {
-        display:false,
+        display: false,
         text: '',
         align: 'start',
         position: 'top',
@@ -131,13 +130,12 @@ const BarChart = () => {
             size: 13,
           },
           color: '#718EBF',
-          
         },
       },
       y: {
         grid: {
           display: true,
-          color:"#F3F3F5",
+          color: '#F3F3F5',
         },
         ticks: {
           font: {
@@ -153,7 +151,7 @@ const BarChart = () => {
   };
 
   return (
-    <div className='bg-white w-[730px] h-[322px] flex items-center justify-center rounded-3xl m-3'>
+    <div className="bg-white w-[730px] h-[322px] flex items-center justify-center rounded-3xl m-3">
       <Bar data={data} options={options} />
     </div>
   );

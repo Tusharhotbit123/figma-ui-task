@@ -13,25 +13,23 @@ const LineChart = () => {
         data: [140, 280, 430, 780, 210, 580, 230, 600], // Y-axis data points
         fill: true, // Set to true if you want to fill the area under the curve
         borderColor: '#396AFF', // Color of the line
-        backgroundColor: (context:ScriptableContext<"line">)=>{
+        backgroundColor: (context: ScriptableContext<'line'>) => {
+          const bgColor = ['rgba(45, 96, 255, 0.25)', 'rgba(45, 96, 255, 0) '];
 
-          const bgColor=[
-            "rgba(45, 96, 255, 0.25)", 
-            "rgba(45, 96, 255, 0) "
-          ]
+          if (!context.chart.chartArea) {
+            return;
+          }
 
-           if(!context.chart.chartArea){
-              return;
-           }
+          const {
+            ctx,
+            data,
+            chartArea: { top, bottom },
+          } = context.chart;
+          const gradientBg = ctx.createLinearGradient(0, top, 0, bottom);
 
-           const {ctx,data, chartArea:{top,bottom}}=context.chart
-           const gradientBg=ctx.createLinearGradient(0,top,0,bottom)
-
-           gradientBg.addColorStop(0,bgColor[0])
-           gradientBg.addColorStop(1,bgColor[1])
-           return gradientBg;
-
-
+          gradientBg.addColorStop(0, bgColor[0]);
+          gradientBg.addColorStop(1, bgColor[1]);
+          return gradientBg;
         }, // Background color (for the area below the curve if fill is true)
         borderWidth: 3, // Width of the line
         tension: 0.3, // Tension for the curve (range from 0 to 1)
@@ -84,14 +82,14 @@ const LineChart = () => {
         },
       },
       y: {
-        beginAtZero:true,
-        min:0,
-        max:800,
+        beginAtZero: true,
+        min: 0,
+        max: 800,
         grid: {
           color: '#DFE5EE',
         },
         ticks: {
-          stepSize:200,
+          stepSize: 200,
           color: '#718EBF',
           font: {
             weight: 'normal',
