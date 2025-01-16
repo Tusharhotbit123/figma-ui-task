@@ -32,7 +32,7 @@ const BarChart = () => {
         borderRadius: [20, 20, 20, 20],
         borderSkipped: false,
         categoryPercentage: 0.5,
-        barPercentage: 0.4,
+        barPercentage: 0.7,
       },
       {
         label: 'Diposit', // Blue bar
@@ -59,7 +59,7 @@ const BarChart = () => {
         borderRadius: [20, 20, 20, 20],
         borderSkipped: false,
         categoryPercentage: 0.5,
-        barPercentage: 0.4,
+        barPercentage: 0.7,
       },
     ],
   };

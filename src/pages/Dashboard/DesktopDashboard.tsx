@@ -1,3 +1,4 @@
+import BalanceChart from '../../components/uiComponents/BalanceChart';
 import BarChart from '../../components/uiComponents/BarChart';
 import Card from '../../components/uiComponents/Card';
 import PieChart from '../../components/uiComponents/PieChart';
@@ -50,16 +51,29 @@ const DesktopDashboard = () => {
           <Transaction />
         </div>
       </div>
-      <div className="bar-chart piechart mt-6 border flex">
+      <div className="bar-chart piechart mt-6 flex">
         <div className="bar-chart flex flex-col  mb-5 ml-10 mr-10">
           <h1 className='text-[#343C6A] font-semibold text-[22px]  relative left-3'>Weekly Activity</h1>
             <BarChart/>
         </div>
-        <div className="piechart">
+        <div className="piechart   flex flex-col relative left-16 ">
+          <h1 className='text-[#343C6A] font-semibold text-[22px] mb-4'>Expense Statistics</h1>
+          <div className='bg-white w-[350px] h-[314px] rounded-3xl flex items-center justify-center'>
           <PieChart/>
+          </div>
         </div>
       </div>
-      <div className="line-chart"></div>
+      <div className="line-chart">
+        <div className='quick-transfer'>
+          
+        </div>
+        <div className='balance-history flex flex-col justify-center ml-7'>
+             <h1 className='font-semibold text-[22px] text-[#343C6A] mt-6 mb-5'>Balance History</h1>
+              
+             <BalanceChart/>
+                          
+        </div>
+      </div>
     </div>
   );
 };
