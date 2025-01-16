@@ -5,7 +5,7 @@ import useWindowWidth from '../../../hooks/useWindowWidth';
 const Navbar = () => {
   const width = useWindowWidth();
 
-  if (width >=750) return <DesktopNavbar />;
+  if (width >= 750) return <DesktopNavbar />;
   else return <MobileNavbar />;
 };
 

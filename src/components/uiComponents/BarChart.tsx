@@ -3,11 +3,11 @@ import { Bar } from 'react-chartjs-2';
 import { ChartOptions, Chart } from 'chart.js';
 import 'chart.js/auto';
 
-interface className{
-  className?:string,
+interface className {
+  className?: string;
 }
 
-const BarChart = ({className}:className) => {
+const BarChart = ({ className }: className) => {
   const data = {
     labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri'],
     datasets: [

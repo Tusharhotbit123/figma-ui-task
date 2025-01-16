@@ -3,11 +3,11 @@ import { Line } from 'react-chartjs-2';
 import { ChartOptions, ScriptableContext } from 'chart.js';
 import 'chart.js/auto'; // Automatically registers the required chart types
 
-interface props{
-  className?:string,
+interface props {
+  className?: string;
 }
 
-const LineChart = ({className}:props) => {
+const LineChart = ({ className }: props) => {
   // Sample data for the line chart
   const data = {
     labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', ''], // X-axis labels

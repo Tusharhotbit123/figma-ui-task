@@ -15,7 +15,7 @@ const PieChart = () => {
         backgroundColor: ['#343C6A', '#FC7900', '#232323', '#396AFF'], // Colors for each section
         borderWidth: 8, // Border width for all slices
         hoverOffset: 10,
-        hoverBorderColor:"#FFFFFF",
+        hoverBorderColor: '#FFFFFF',
       },
     ],
   };
@@ -80,7 +80,7 @@ const PieChart = () => {
   };
 
   return (
-    <div className=''>
+    <div className="">
       <Doughnut
         data={data}
         options={options}

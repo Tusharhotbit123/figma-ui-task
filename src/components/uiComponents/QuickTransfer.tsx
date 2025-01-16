@@ -5,11 +5,11 @@ import Workman from '../../assets/images/Workman.png';
 import Arrow from '../../assets/images/Arrow.png';
 import Vector from '../icons/Vector';
 
-interface props{
-  className?:string,
+interface props {
+  className?: string;
 }
 
-const QuickTransfer = ({className}:props) => {
+const QuickTransfer = ({ className }: props) => {
   return (
     <div className={className}>
       <div className="flex justify-around items-center w-[394px] h-[127px]">
