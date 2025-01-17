@@ -6,31 +6,45 @@ import useWindowWidth from '../../hooks/useWindowWidth';
 
 const Layout = () => {
   const width = useWindowWidth();
+ 
   // const [flag,setFlag]=useState(false)
 
-  return (
-    <div className="flex min-h-screen min-w-full bg-slate-100">
-      {/* Sidebar */}
-      <div
-        className={`min-h-screen bg-white w-56 ${width >= 1024 ? 'block' : 'hidden'}`}
-      >
-        <Sidebar />
-      </div>
-
-      {/* Main Content */}
-      <div className="flex flex-col w-full min-h-screen border">
-        {/* Navbar */}
-        <div className=" bg-white">
-          <Navbar />
+  if(width>=750){
+    return (
+      <div className="flex min-h-screen min-w-full bg-slate-100">
+        {/* Sidebar */}
+        <div className={`min-h-screen bg-white w-56   ${width >= 750 ? 'block' : 'hidden'}`}>
+          <Sidebar />
         </div>
-
-        {/* Main - take the remaining space */}
-        <div className="overflow-auto min-w-full">
-          <Main />
+  
+        {/* Main Content */}
+        <div className="flex flex-col w-full min-h-screen border">
+          {/* Navbar */}
+          <div className=" bg-white">
+            <Navbar />
+          </div>
+  
+          {/* Main - take the remaining space */}
+          <div className="overflow-auto min-w-full">
+            <Main />
+          </div>
         </div>
       </div>
+    );
+  }
+
+  return(
+    
+    <div>
+       <div>
+         <Navbar/>
+         <Sidebar/>
+         <Main/>
+       </div>
     </div>
-  );
+
+  )
+  
 };
 
 export default Layout;

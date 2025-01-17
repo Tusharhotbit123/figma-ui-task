@@ -1,12 +1,17 @@
-import React from 'react';
+// import {useState} from 'react';
 import NavInput from '../../uiComponents/NavInput';
 import { Logo } from '../../icons';
+// import MobileSidebar from '../Sidebar/MobileSidebar';
+
 
 const MobileNavbar = () => {
+
+  // const [flag,setFlag]=useState(true)
+
   return (
     <div className="h-[140px] flex flex-col items-center">
       <div className=" flex  w-full justify-around items-center mt-6">
-        <div className=" w-36 pl-6">
+        <div className=" w-36 pl-6" >
           <img
             className="h-8 w-6 cursor-pointer mt-2"
             src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/hamburger-menu-512.png"
