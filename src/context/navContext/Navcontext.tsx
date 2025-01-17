@@ -12,7 +12,7 @@ type NavProviderProps = {
 };
 
 export const NavProvider = ({ children }: NavProviderProps) => {
-  const [classvals, setClassvals] = useState("");
+  const [classvals, setClassvals] = useState("fixed inset-0 z-50  w-0");
 
   return (
     <NavContext.Provider value={{ classvals, setClassvals }}>

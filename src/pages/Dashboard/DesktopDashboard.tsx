@@ -7,7 +7,7 @@ import Transaction from '../../components/uiComponents/Transaction';
 
 const DesktopDashboard = () => {
   return (
-    <div className="main-div">
+    <div className="main-div ">
       <div className="card-transaction flex justify-around mt-6">
         <div className="cards  w-full flex flex-col justify-center">
           <div className="flex justify-around items-center mb-7">

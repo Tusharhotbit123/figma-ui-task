@@ -18,7 +18,7 @@ const FormInput = ({
     : undefined;
 
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-start ">
       <div>
         <label className="flex flex-col text-xs text-[#232323] m-4">
           {label}
@@ -30,8 +30,8 @@ const FormInput = ({
           />
         </label>
       </div>
-      <div>
-        <p>{errorMessage && <p className="text-red-700">{errorMessage}</p>}</p>
+      <div className='ml-6'>
+        <p>{errorMessage && <p className="text-red-700 ">{errorMessage}</p>}</p>
       </div>
     </div>
   );

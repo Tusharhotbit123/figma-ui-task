@@ -37,8 +37,8 @@ const Layout = () => {
     
     <div>
        <div>
-         <Navbar/>
          <Sidebar/>
+         <Navbar/>
          <Main/>
        </div>
     </div>

@@ -1,30 +1,21 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { SideBarButtonProps } from './ButtonInterface';
 import { Link } from 'react-router-dom';
 
-const SideBarButton = ({ title, component: Icon }: SideBarButtonProps) => {
-  const [color, setColor] = useState('#232323');
-
-  const handleMouseEnter = () => {
-    setColor('white');
-  };
-
-  const handleMouseLeave = () => {
-    setColor('#232323');
-  };
+const SideBarButton = ({ title, component: Icon,id,active,setActive}: SideBarButtonProps) => {
+  
+  // const [active,setActive]=useState(0)
 
   return (
-    <div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className="h-[25px] w-[170px]  flex items-center justify-between  hover:bg-black hover:text-white hover:rounded-lg hover:scale-110 hover:h-[45px] hover:translate hover:transition-all hover:pl-2"
-    >
+    <div className="h-[25px] w-[170px]  flex items-center justify-between">
       <div className="">
-        <Icon height="25" width="25" color={color} />
+        <Icon height="25" width="25" color={active===id?"black":"#B1B1B1"} />
       </div>
       <div className="w-3/4 h-[25px] bg-slate">
         <Link to={title.toLowerCase()}>
-          <button className="font-medium text-[18px] ml-2 ">{title}</button>
+          <button onClick={()=>setActive(id)}  className={`font-medium text-[18px] ml-2 ${active===id?"text-black":"text-[#B1B1B1]"}`}>
+            {title}
+          </button>
         </Link>
       </div>
     </div>
