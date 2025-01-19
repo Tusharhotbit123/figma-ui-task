@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode } from "react";
+import { createContext, useState, ReactNode } from 'react';
 
 type PropType = {
   classvals: string;
@@ -12,7 +12,7 @@ type NavProviderProps = {
 };
 
 export const NavProvider = ({ children }: NavProviderProps) => {
-  const [classvals, setClassvals] = useState("fixed inset-0 z-50  w-0");
+  const [classvals, setClassvals] = useState('fixed inset-0 z-50  w-0');
 
   return (
     <NavContext.Provider value={{ classvals, setClassvals }}>
@@ -20,4 +20,3 @@ export const NavProvider = ({ children }: NavProviderProps) => {
     </NavContext.Provider>
   );
 };
- 

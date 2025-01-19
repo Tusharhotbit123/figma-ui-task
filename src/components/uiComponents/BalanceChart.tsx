@@ -14,7 +14,7 @@ const LineChart = ({ className }: props) => {
     datasets: [
       {
         label: 'Sales Over Time', // Line chart label
-        data: [140, 280, 430, 780, 210, 580, 230, 600], // Y-axis data points
+        data: [Math.floor(Math.random() * 801),Math.floor(Math.random() * 801),Math.floor(Math.random() * 801),Math.floor(Math.random() * 801),Math.floor(Math.random() * 801),Math.floor(Math.random() * 801),Math.floor(Math.random() * 801),Math.floor(Math.random() * 801)], // Y-axis data points
         fill: true, // Set to true if you want to fill the area under the curve
         borderColor: '#396AFF', // Color of the line
         backgroundColor: (context: ScriptableContext<'line'>) => {

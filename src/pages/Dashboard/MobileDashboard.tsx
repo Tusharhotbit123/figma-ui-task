@@ -7,8 +7,8 @@ import QuickTransfer from '../../components/uiComponents/QuickTransfer';
 
 const MobileDashboard = () => {
   return (
-    <div className="main-div bg-white overflow-x-auto">
-      <div className="creadits-cards flex flex-col space-x-4">
+    <div className="main-div bg-white">
+      <div className="creadits-cards flex flex-col">
         <div className="flex justify-around items-center mt-6 mb-6">
           <h1 className="relative right-20 font-semibold text-base text-[#343C6A]">
             My Cards
@@ -24,7 +24,7 @@ const MobileDashboard = () => {
               cardHolder="text-xs text-[rgba(255,255,255,0.70)]"
               bottom=" w-full h-[70px] flex justify-around items-center bg-gradient-to-br from-[rgba(255,255,255,.15)] to-[rgba(255,255,255,0)] rounded-b-3xl"
               balance="text-xs"
-              borderBottom="flex justify-center items-center  mr-6"
+              borderBottom="flex justify-center items-center  mr-6 relative left-6"
               ellipse="#FFFFFF80"
               color="white"
             />
@@ -36,7 +36,7 @@ const MobileDashboard = () => {
               cardHolder="text-xs text-[#718EBF]"
               bottom=" w-full h-[70px] flex justify-around items-center  bg-gradient-to-br from-[rgba(255,255,255,.15)] to-[rgba(255,255,255,0)] rounded-b-3xl border-t border-[#DFEAF2]"
               balance="text-xs text-[#718EBF]"
-              borderBottom="flex justify-center items-center   mr-6"
+              borderBottom="flex justify-center items-center   mr-6 relative left-6"
               ellipse="#9199AF80"
               color="black"
             />

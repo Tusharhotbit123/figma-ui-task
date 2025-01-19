@@ -4,15 +4,20 @@ import { Logo } from '../../icons';
 import { NavContext } from '../../../context/navContext/Navcontext';
 import { useContext } from 'react';
 
-
 const MobileNavbar = () => {
-
-  const {setClassvals}=useContext(NavContext)
+  const { setClassvals } = useContext(NavContext);
 
   return (
-    <div className="h-[140px] flex flex-col items-center ">
+    <div className="h-[140px] bg-white flex flex-col items-center sticky top-0  z-40">
       <div className=" flex  w-full justify-around items-center mt-6">
-        <div className=" w-36 pl-6" onClick={()=>setClassvals("fixed inset-0 z-50  w-full  translation transition-all")} >
+        <div
+          className=" w-36 pl-6"
+          onClick={() =>
+            setClassvals(
+              'fixed inset-0 z-50  w-full  translation transition-all',
+            )
+          }
+        >
           <img
             className="h-8 w-6 cursor-pointer mt-2"
             src="https://cdn4.iconfinder.com/data/icons/navigation-40/24/hamburger-menu-512.png"

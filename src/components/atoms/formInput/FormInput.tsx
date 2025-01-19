@@ -30,7 +30,7 @@ const FormInput = ({
           />
         </label>
       </div>
-      <div className='ml-6'>
+      <div className="ml-6">
         <p>{errorMessage && <p className="text-red-700 ">{errorMessage}</p>}</p>
       </div>
     </div>
