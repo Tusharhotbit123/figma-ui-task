@@ -21,7 +21,7 @@ const DesktopSidebar = () => {
         </div>
         <div className="flex flex-col  flex-grow overflow-auto">
           {arr.map((element) => (
-            <div key={element.id} className="flex pl-2 items-center ">
+            <div key={element.id} className="flex pl-2 items-center">
               <div
                 className={` h-16  mr-5 w-2 rounded-3xl  ${active === element.id ? 'bg-[#232323]' : 'bg-white'}`}
               ></div>

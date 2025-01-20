@@ -11,7 +11,7 @@ const Layout = () => {
 
   if (width >= 750) {
     return (
-      <div className="flex min-h-screen min-w-full bg-slate-100">
+      <div className="flex min-h-screen min-w-max bg-slate-100">
         {/* Sidebar */}
         <div
           className={`min-h-screen bg-white w-56   ${width >= 750 ? 'block' : 'hidden'}`}

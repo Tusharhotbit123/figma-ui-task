@@ -1,10 +1,16 @@
 import { Notifications, Settings, Glass } from '../../icons';
-import { useLocation } from 'react-router-dom';
+import { useLocation,useNavigate} from 'react-router-dom';
 
 const DesktopNavbar = () => {
   const location = useLocation();
   if (!location || !location.pathname) {
     return <div>Error: No location found!</div>;
+  }
+
+  const navigate=useNavigate()
+
+  const handleClick=()=>{
+    navigate('/setting')
   }
 
   return (
@@ -26,7 +32,7 @@ const DesktopNavbar = () => {
           />
         </div>
 
-        <button className="h-14 w-14 rounded-full bg-[#F5F7FA] flex items-center justify-center">
+        <button onClick={handleClick} className="h-14 w-14 rounded-full bg-[#F5F7FA] flex items-center justify-center">
           <Settings height="25" width="25" color="#718EBF" />
         </button>
         <button className="h-14 w-14 rounded-full bg-[#F5F7FA] flex justify-center items-center">

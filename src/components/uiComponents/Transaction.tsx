@@ -4,7 +4,7 @@ import Group from '../icons/Group';
 
 const Transaction = () => {
   return (
-    <div className="bg-white  h-[235px] w-[350px] rounded-3xl flex flex-col items-center">
+    <div className="bg-white  h-64 w-full rounded-3xl flex flex-col items-center relative bottom-1">
       <div className=" flex items-center justify-around w-full mt-3 mb-3">
         <div className="relative left-4">
           <Group />

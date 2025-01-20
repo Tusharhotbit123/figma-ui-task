@@ -11,7 +11,7 @@ const PieChart = () => {
     labels: ['Entertainment', 'Bill Expense', 'Others', 'Investment'], // Labels for each section
     datasets: [
       {
-        data: [22, 15, 25, 38], // Sizes of the pie slices (in percentages)
+        data: [Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100)], // Sizes of the pie slices (in percentages)
         backgroundColor: ['#343C6A', '#FC7900', '#232323', '#396AFF'], // Colors for each section
         borderWidth: 8, // Border width for all slices
         hoverOffset: 10,
