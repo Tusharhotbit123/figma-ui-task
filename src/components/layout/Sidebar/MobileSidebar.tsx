@@ -14,15 +14,15 @@ const MobileSidebar = () => {
 
   return (
     <div
-      className={`fixed inset-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-0 z-50 min-h-screen  bg-white transition-all duration-300 ${
         classvals === 'w-0' ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
       style={{
         width: classvals === 'w-0' ? '0' : '100%',
       }}
     >
-      <div className="min-h-screen flex flex-col bg-white">
-        <div className="flex justify-between items-center text-2xl font-extrabold w-full h-[100px] bg-white px-4">
+      <div className=" flex flex-col bg-white">
+        <div className="flex justify-between items-center text-2xl font-extrabold min-w-max h-[100px] bg-white px-4">
           <div className="flex">
             <div>
               <Logo />

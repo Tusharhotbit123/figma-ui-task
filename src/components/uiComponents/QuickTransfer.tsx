@@ -12,7 +12,7 @@ interface props {
 const QuickTransfer = ({ className }: props) => {
   return (
     <div className={className}>
-      <div className="flex justify-around items-center w-[394px] h-[127px]">
+      <div className="flex justify-around items-center w-96 h-32">
         <div className="flex flex-col items-center justify-center">
           <img src={Livia} />
           <h1 className="text-base text-[#232323] font-bold">Livia Bator</h1>
@@ -32,13 +32,13 @@ const QuickTransfer = ({ className }: props) => {
           <img src={Arrow} />
         </div>
       </div>
-      <div className="h-[50px] w-[395px] flex items-center justify-around">
+      <div className="h-12 w-96 flex items-center justify-around">
         <h1 className="text-[#718EBF] font-normal text-base">Write Amount</h1>
-        <div className="bg-[#EDF1F7] rounded-3xl w-[265px] h-[50px] flex justify-end items-center">
+        <div className="bg-[#EDF1F7] rounded-3xl w-64 h-12 flex justify-end items-center">
           <span className="text-[#718EBF] text-base relative right-16">
             525.50
           </span>
-          <button className="bg-[#232323] h-[50px] w-[125px] rounded-3xl text-white flex justify-center items-center">
+          <button className="bg-[#232323] h-12 w-32 rounded-3xl text-white flex justify-center items-center">
             <p className="text-base font-medium pr-4">Send</p>
             <Vector />
           </button>

@@ -34,18 +34,7 @@ const Form = () => {
 
   return (
     <div className="min-h-screen bg-white m-2 rounded-xl flex flex-col items-center">
-      <div>
-        <div className="flex justify-around font-medium text-sm mt-6 mb-2">
-          <button className="text-[#232323] underline decoration-[2px] underline-offset-[10px] ">
-            Edit Profiile
-          </button>
-          <button className="text-[#718EBF]">Preferences</button>
-          <button className="text-[#718EBF]">Security</button>
-        </div>
-        <div className="flex justify-center">
-          <hr className="w-96" />
-        </div>
-      </div>
+      
       <div className="w-full mt-11 flex justify-center">
         <img
           className="w-[100px] h-[100px] object-cover  rounded-full"

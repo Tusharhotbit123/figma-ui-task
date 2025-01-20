@@ -59,8 +59,8 @@ const DesktopSetting = () => {
 
   if (tab == 'Edit Profile') {
     return (
-      <div className="border ml-20 mt-10 mb-40 mr-20 rounded-2xl h-full w-auto bg-white">
-        <div className="flex mt-8 ml-8 mr-8 mb-10 h-[30px] w-[1050px]">
+      <div className="border ml-20 mt-10 mb-40 mr-20 rounded-3xl h-full w-auto bg-white">
+        <div className="flex mt-8 ml-8 mr-8 mb-10 ">
           <button
             className="ml-4 mr-8 pl-4 pr-4 text-black border-b-[3px] border-b-black"
             onClick={() => setTab('Edit Profile')}
@@ -388,8 +388,8 @@ const DesktopSetting = () => {
     );
   } else if (tab === 'Preferences') {
     return (
-      <div className="mt-10 mb-40 mx-20 flex items-center justify-center">
-        <div className="h-[717px] w-[1110px]  items-center justify-center bg-white rounded-3xl flex flex-col">
+      <div className="mt-10 mb-40  flex items-center justify-center">
+        <div className="h-[717px] w-[1160px]  items-center justify-center bg-white rounded-3xl flex flex-col">
           <div className="flex mt-8 ml-8 mr-8 mb-10 h-[30px] w-[1050px] relative bottom-72">
             <button
               className="ml-8 mr-8 text-[#718EBF]"
@@ -410,14 +410,14 @@ const DesktopSetting = () => {
               Security
             </button>
           </div>
-          <h1>Preferences</h1>
+          <h1 className='border'>Preferences</h1>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="mt-10 mb-40 mx-20 flex items-center justify-center">
+    <div className="mt-10 mb-40  flex items-center justify-center">
       <div className="h-[717px] w-[1110px] flex items-center justify-center bg-white rounded-3xl flex flex-col">
         <div className="flex mt-8 ml-8 mr-8 mb-10 h-[30px] w-[1050px] relative bottom-72">
           <button

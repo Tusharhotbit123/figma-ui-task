@@ -12,21 +12,17 @@ const Layout = () => {
   if (width >= 750) {
     return (
       <div className="flex min-h-screen min-w-max bg-slate-100">
-        
         <div
           className={`min-h-screen bg-white w-56   ${width >= 750 ? 'block' : 'hidden'}`}
         >
           <Sidebar />
         </div>
 
-        
         <div className="flex flex-col w-full">
-          
           <div className=" bg-white sticky top-0 z-50">
             <Navbar />
           </div>
 
-          
           <div className="overflow-auto min-w-full">
             <Main />
           </div>
@@ -37,10 +33,16 @@ const Layout = () => {
 
   return (
     <div>
-      <div>
+      <div className="min-h-screen w-full">
         <Sidebar />
-        <Navbar />
-        <Main />
+        <div className="grid grid-row-[auto_auto]">
+          <div>
+            <Navbar />
+          </div>
+          <div className='overflow-x-auto'>
+            <Main />
+          </div>
+        </div>
       </div>
     </div>
   );

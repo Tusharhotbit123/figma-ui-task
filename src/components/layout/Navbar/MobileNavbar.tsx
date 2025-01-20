@@ -10,8 +10,8 @@ const MobileNavbar = () => {
   const {img}=useContext(ImageContext)
 
   return (
-    <div className="h-[140px] bg-white flex flex-col items-center sticky top-0  z-40">
-      <div className=" flex  w-full justify-around items-center mt-6">
+    <div className="h-36  min-w-full   bg-white flex flex-col items-center sticky top-0  z-40">
+      <div className=" flex   justify-around items-center mt-6">
         <div
           className=" w-36 pl-6"
           onClick={() =>
