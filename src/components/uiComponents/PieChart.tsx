@@ -80,7 +80,7 @@ const PieChart = () => {
   };
 
   return (
-    <div className="">
+    <div className="h-[320px]">
       <Doughnut
         data={data}
         options={options}
