@@ -2,10 +2,12 @@ import NavInput from '../../uiComponents/NavInput';
 import { Logo } from '../../icons';
 // import MobileSidebar from '../Sidebar/MobileSidebar'
 import { NavContext } from '../../../context/navContext/Navcontext';
+import { ImageContext } from '../../../context/imageContext/ImageContext';
 import { useContext } from 'react';
 
 const MobileNavbar = () => {
   const { setClassvals } = useContext(NavContext);
+  const {img}=useContext(ImageContext)
 
   return (
     <div className="h-[140px] bg-white flex flex-col items-center sticky top-0  z-40">
@@ -29,7 +31,7 @@ const MobileNavbar = () => {
         <div className="flex justify-center items-center w-36 pl-16">
           <img
             className="h-9 w-9 rounded-full"
-            src="https://s3-alpha-sig.figma.com/img/57d3/d250/790e98129931897251abd3915a931233?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvrTbfYnuQOh7DgZbCVns4pBewutzVx36-y8zVmIy7QRsBGU5Q~DtYVN3qkxXkfO~tFYNtPO48B3rNNlGjxKFLkZVa3xE72FQRiP-CdxbYC7vkuEmUJOkqsMvceDTWK6fOGaD0KiVe2bhLOKlx2EJeQuCn-DKLcNfM6CbUm1AnuMisp90DnIkXA2laLh4oxU1jnBZpm4kbDDbRs9lyJu73Rr-jEP5O0JCMKGBqg4Y9lywumjPXyFtcc6lwda7NYWySxTvnXcWqDtGzCw78No0BeplZONjofNAijChAv3GRrm9PoR5-ICi611e74OIOOtl-XJSo4aSMahuSeUWDXeVQ__"
+            src={img}
           />
         </div>
       </div>

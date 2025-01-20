@@ -4,13 +4,16 @@ import './index.css';
 import App from './App.tsx';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { NavProvider } from './context/navContext/Navcontext.tsx';
+import { ImageProvider } from './context/imageContext/ImageContext.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Router>
-      <NavProvider>
-        <App />
-      </NavProvider>
+      <ImageProvider>
+        <NavProvider>
+          <App />
+        </NavProvider>
+      </ImageProvider>
     </Router>
   </StrictMode>,
 );

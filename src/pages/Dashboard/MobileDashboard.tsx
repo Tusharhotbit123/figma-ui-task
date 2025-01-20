@@ -18,21 +18,21 @@ const MobileDashboard = () => {
           </h1>
         </div>
         <div className="flex overflow-x-auto w-full">
-          <div className="flex-none mr-4">
-            <Card
-              cName="w-[350px] h-[235px]  text-white bg-gradient-to-r from-[#5B5A6F]  to-black rounded-3xl"
-              cardHolder="text-xs text-[rgba(255,255,255,0.70)]"
-              bottom=" w-full h-[70px] flex justify-around items-center bg-gradient-to-br from-[rgba(255,255,255,.15)] to-[rgba(255,255,255,0)] rounded-b-3xl"
-              balance="text-xs"
-              borderBottom="flex justify-center items-center  mr-6 relative left-6"
-              ellipse="#FFFFFF80"
-              color="white"
-            />
+          <div className="">
+          <Card
+                cName="w-96 h-64 text-white bg-gradient-to-r from-[#5B5A6F]  to-black rounded-3xl"
+                cardHolder="text-xs text-[rgba(255,255,255,0.70)]"
+                bottom=" w-full h-24 flex justify-around items-center bg-gradient-to-br from-[rgba(255,255,255,.15)] to-[rgba(255,255,255,0)] rounded-b-3xl"
+                balance="text-xs"
+                borderBottom="flex justify-center items-center  mr-6 relative left-6"
+                ellipse="#FFFFFF80"
+                color="white"
+              />
           </div>
 
           <div className="flex-none ml-4">
             <Card
-              cName="w-[350px] h-[235px]  text-[#343C6A] bg-white border border-[#DFEAF2] rounded-3xl"
+              cName="w-96 h-64  text-[#343C6A] bg-white border border-[#DFEAF2] rounded-3xl"
               cardHolder="text-xs text-[#718EBF]"
               bottom=" w-full h-[70px] flex justify-around items-center  bg-gradient-to-br from-[rgba(255,255,255,.15)] to-[rgba(255,255,255,0)] rounded-b-3xl border-t border-[#DFEAF2]"
               balance="text-xs text-[#718EBF]"

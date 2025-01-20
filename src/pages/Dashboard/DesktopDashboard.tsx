@@ -7,7 +7,7 @@ import Transaction from '../../components/uiComponents/Transaction';
 
 const DesktopDashboard = () => {
   return (
-    <div className="grid  grid-rows-[300px_auto_auto] gap-3 mx-10 mt-6 mb-10">
+    <div className="grid  grid-rows-[auto_auto_auto] gap-3 mx-10 mt-6 ">
       <div className="grid grid-cols-3   gap-6">
         <div className="col-span-2 flex flex-col">
           <div className="flex justify-between mb-5">
@@ -44,16 +44,16 @@ const DesktopDashboard = () => {
           </div>
         </div>
         <div className="flex flex-col items-center ">
-          <h1 className="font-semibold text-[22px] text-[#343C6A] mb-6 relative right-20">
+          <h1 className="font-semibold text-[22px] text-[#343C6A] mb-6 relative right-28">
             Recent Transaction
           </h1>
           <Transaction />
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-3 ">
         <div className="col-span-2 ">
           <h1 className="font-semibold text-[22px] text-[#343C6A]">
-            {' '}
+            
             Weekly Activity
           </h1>
           <div className="relative right-3">
@@ -61,7 +61,7 @@ const DesktopDashboard = () => {
           </div>
         </div>
         <div className="flex  flex-col items-center ">
-          <h1 className="text-[#343C6A] font-semibold text-[22px] mb-4 mr-40">
+          <h1 className="text-[#343C6A] font-semibold text-[22px] mb-4 mr-52">
             Expense Statistics
           </h1>
           <div className="bg-white rounded-3xl w-full flex justify-center ml-4 ">
