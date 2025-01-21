@@ -1,5 +1,5 @@
-import {useState,useContext} from 'react';
-import pencil from "../../assets/images/pencil.png"
+import { useState, useContext } from 'react';
+import pencil from '../../assets/images/pencil.png';
 import { ImageContext } from '../../context/imageContext/ImageContext';
 
 import {
@@ -11,10 +11,7 @@ import {
 } from 'react-hook-form';
 
 const DesktopSetting = () => {
-
-
-  const {img,handleImageUpload}=useContext(ImageContext)
-
+  const { img, handleImageUpload } = useContext(ImageContext);
 
   const methods = useForm<FieldValues>({
     mode: 'onSubmit', // Trigger validation on form submission
@@ -36,26 +33,6 @@ const DesktopSetting = () => {
   };
 
   const [tab, setTab] = useState('Edit Profile');
-  // const [img, setImg] = useState(
-  //   'https://s3-alpha-sig.figma.com/img/57d3/d250/790e98129931897251abd3915a931233?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gvrTbfYnuQOh7DgZbCVns4pBewutzVx36-y8zVmIy7QRsBGU5Q~DtYVN3qkxXkfO~tFYNtPO48B3rNNlGjxKFLkZVa3xE72FQRiP-CdxbYC7vkuEmUJOkqsMvceDTWK6fOGaD0KiVe2bhLOKlx2EJeQuCn-DKLcNfM6CbUm1AnuMisp90DnIkXA2laLh4oxU1jnBZpm4kbDDbRs9lyJu73Rr-jEP5O0JCMKGBqg4Y9lywumjPXyFtcc6lwda7NYWySxTvnXcWqDtGzCw78No0BeplZONjofNAijChAv3GRrm9PoR5-ICi611e74OIOOtl-XJSo4aSMahuSeUWDXeVQ__',
-  // );
-
-  // const handleImageUpload = (event: ChangeEvent<HTMLInputElement>) => {
-  //   const file = event.target.files?.[0]; // Get the first file from the input
-  //   if (file) {
-  //     const reader = new FileReader();
-
-  //     // Event handler for when the file is read
-  //     reader.onloadend = () => {
-  //       if (reader.result) {
-  //         setImg(reader.result as string); // Set the Base64 result as the image source
-  //       }
-  //     };
-
-  //     // Read the file as a data URL (Base64 encoded string)
-  //     reader.readAsDataURL(file);
-  //   }
-  // };
 
   if (tab == 'Edit Profile') {
     return (
@@ -89,8 +66,8 @@ const DesktopSetting = () => {
               alt="Profile"
             />
 
-            <div className='h-8 w-8 bg-black rounded-full flex items-center relative right-6 top-16 '>
-              <img src={pencil} className='h-3 w-3 relative left-3'/>
+            <div className="h-8 w-8 bg-black rounded-full flex items-center relative right-6 top-16 ">
+              <img src={pencil} className="h-3 w-3 relative left-3" />
               <input
                 type="file"
                 accept="image/*" // Restrict to image files only
@@ -410,7 +387,7 @@ const DesktopSetting = () => {
               Security
             </button>
           </div>
-          <h1 className='border'>Preferences</h1>
+          <h1 className="border">Preferences</h1>
         </div>
       </div>
     );

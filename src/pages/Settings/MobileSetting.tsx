@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Form from '../../components/uiComponents/Form';
 
 const MobileSetting = () => {
-  const [tab, setTab] = useState('Security');
+  const [tab, setTab] = useState('Edit Profile');
 
   if (tab ==='Security') {
     return (
