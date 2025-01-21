@@ -1,8 +1,8 @@
 import { createContext, useState, ReactNode } from 'react';
 
 type PropType = {
-  classvals: string;
-  setClassvals: React.Dispatch<React.SetStateAction<string>>;
+  activeWidth: string;
+  setActiveWidth: React.Dispatch<React.SetStateAction<string>>;
 };
 
 export const NavContext = createContext<PropType>({} as PropType);
@@ -12,10 +12,10 @@ type NavProviderProps = {
 };
 
 export const NavProvider = ({ children }: NavProviderProps) => {
-  const [classvals, setClassvals] = useState('w-0');
+  const [activeWidth, setActiveWidth] = useState('w-0');
 
   return (
-    <NavContext.Provider value={{ classvals, setClassvals }}>
+    <NavContext.Provider value={{ activeWidth, setActiveWidth }}>
       {children}
     </NavContext.Provider>
   );

@@ -2,14 +2,17 @@ import { useContext } from 'react';
 import { ImageContext } from '../../context/imageContext/ImageContext';
 import NavInput from '../atoms/NavInput';
 import { Settings, Notifications } from '../icons';
+import { NavContext } from '../../context/navContext/Navcontext';
 
 const Navbar = () => {
   const { img } = useContext(ImageContext);
+  const {setActiveWidth}=useContext(NavContext)
 
   return (
     <div className="border-4 w-full h-36 flex flex-col items-center md:flex-row md:justify-between md:px-8">
       <div className="flex w-full justify-around items-center mt-6 md:hidden">
         <img
+          onClick={()=>setActiveWidth('w-full')}
           className="h-4 w-5"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png"
           alt="Menu"

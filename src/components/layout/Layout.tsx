@@ -1,14 +1,35 @@
-import Navbar from "./Navbar";
-
+import { useContext } from 'react';
+import Navbar from './Navbar';
+import Sidebar from './Sidebar';
+import Main from './Main';
+import { NavContext } from '../../context/navContext/Navcontext';
 
 const Layout = () => {
-  return(
-    <div className="">
-         <Navbar/>
-    </div>
-  )
-}
-  
+  const { activeWidth } = useContext(NavContext);
 
+  return (
+    <div className=" w-full min-h-screen md:flex">
+      <div className="hidden md:block">
+        <Sidebar className=" border-4 flex flex-col justify-between items-center" 
+             name="flex items-center justify-center h-32"
+        />
+      </div>
+
+      <div
+        className={`bg-gray-100 border-4 min-h-screen fixed inset-0 z-50 transform ${
+          activeWidth === 'w-0' ? '-translate-x-full' : 'translate-x-0'
+        } transition-transform duration-300`}
+      >
+        <Sidebar className="border-4 flex flex-col  items-start md:items-center min-h-screen" 
+           name=" w-4/5  flex justify-between ml-7 mb-6 mt-8"
+        />
+      </div>
+      <div className="flex flex-col w-full">
+        <Navbar />
+        <Main />
+      </div>
+    </div>
+  );
+};
 
 export default Layout;
