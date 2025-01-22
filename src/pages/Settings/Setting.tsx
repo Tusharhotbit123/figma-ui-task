@@ -1,11 +1,94 @@
-import useWindowWidth from '../../hooks/useWindowWidth';
-import DesktopSetting from './DesktopSetting';
-import MobileSetting from './MobileSetting';
-const Setting = () => {
-  const width = useWindowWidth();
+import {
+  useForm,
+  FormProvider,
+  SubmitHandler,
+  FieldValues,
+} from 'react-hook-form';
+import FormInput from '../../components/atoms/formInput/FormInput';
+import formData from '../../components/atoms/formInput/formData';
+import { useContext } from 'react';
+import { ImageContext } from '../../context/imageContext/ImageContext';
+import pencil from '../../assets/images/pencil.png';
 
-  if (width >= 750) return <DesktopSetting />;
-  else return <MobileSetting />;
+const Setting = () => {
+  const { img, handleImageUpload } = useContext(ImageContext);
+  const method = useForm();
+
+  const onSubmit: SubmitHandler<FieldValues> = (data) => {
+    console.log('Form data:', data); // Output form data
+  };
+
+  return (
+    <div className="bg-white rounded-3xl m-4 min-h-max pt-4 md:max-w-max ">
+      <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-2 lg:justify-start ">
+        <button className="text-[#232323] underline decoration-[2px] underline-offset-[10px] lg:px-8 lg:ml-24">
+          Edit Profiile
+        </button>
+        <button className="text-[#718EBF] lg:px-8 ">Preferences</button>
+        <button className="text-[#718EBF] lg:px-8">Security</button>
+      </div>
+
+      <div className=" flex justify-center mt-11 lg:hidden">
+        <img
+          src={img}
+          alt="profile picture"
+          className="h-24 w-24 rounded-full"
+        />
+
+        <div className="bg-black h-6 w-6 rounded-full flex items-center justify-around relative top-14 right-4">
+          <img src={pencil} className="h-3 w-3 relative left-1" />
+          <input
+            type="file"
+            accept="image/*"
+            onChange={handleImageUpload}
+            className="bg-black rounded-full opacity-0 cursor-pointer h-6 w-6 "
+          />
+        </div>
+      </div>
+
+      <div className="md:flex md:justify-center  md:w-full ">
+        <div className="hidden lg:flex lg:w-1/4   lg:justify-center lg:mt-10 lg:ml-6  ">
+          <img
+            src={img}
+            alt="profile picture"
+            className="h-24 w-24 rounded-full"
+          />
+
+          <div className="bg-black h-6 w-6 rounded-full flex items-center justify-around relative top-14 right-4">
+            <img src={pencil} className="h-3 w-3 relative left-1" />
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className="bg-black rounded-full opacity-0 cursor-pointer h-6 w-6 "
+            />
+          </div>
+        </div>
+
+        <FormProvider {...method}>
+          <form
+            onSubmit={method.handleSubmit(onSubmit)}
+            className=" mt-6 mb-12 flex flex-col items-center md:mb-2   md:w-3/4 md:h-full pb-8 md:flex-row md:justify-center md:flex-wrap lg:justify-end"
+          >
+            {formData.map((field) => {
+              return (
+                <FormInput
+                  name={field.name}
+                  label={field.label}
+                  validation={field.validation}
+                  type={field.type}
+                  placeholder={field.placeholder}
+                />
+              );
+            })}
+            <button className="w-3/4 h-10 border rounded-lg text-white bg-black font-medium text-base lg:w-48 lg:h-12 lg:rounded-2xl lg:relative lg:right-3 lg:mt-2">
+              Save
+            </button>
+          </form>
+        </FormProvider>
+      </div>
+    </div>
+  );
 };
 
 export default Setting;

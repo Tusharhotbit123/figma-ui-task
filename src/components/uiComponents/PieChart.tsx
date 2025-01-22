@@ -11,7 +11,12 @@ const PieChart = () => {
     labels: ['Entertainment', 'Bill Expense', 'Others', 'Investment'], // Labels for each section
     datasets: [
       {
-        data: [Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100),Math.floor(Math.random()*100)], // Sizes of the pie slices (in percentages)
+        data: [
+          Math.floor(Math.random() * 100),
+          Math.floor(Math.random() * 100),
+          Math.floor(Math.random() * 100),
+          Math.floor(Math.random() * 100),
+        ], // Sizes of the pie slices (in percentages)
         backgroundColor: ['#343C6A', '#FC7900', '#232323', '#396AFF'], // Colors for each section
         borderWidth: 8, // Border width for all slices
         hoverOffset: 10,
@@ -80,7 +85,7 @@ const PieChart = () => {
   };
 
   return (
-    <div className="h-[320px]">
+    <div className="h-80 ">
       <Doughnut
         data={data}
         options={options}

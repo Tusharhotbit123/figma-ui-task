@@ -8,7 +8,7 @@ import FormInput from '../atoms/formInput/FormInput';
 import arr from '../atoms/formInput/formData';
 import { useContext } from 'react';
 import { ImageContext } from '../../context/imageContext/ImageContext';
-import pencil from "../../assets/images/pencil.png"
+import pencil from '../../assets/images/pencil.png';
 
 interface FormData {
   name: string;
@@ -34,7 +34,6 @@ const Form = () => {
 
   return (
     <div className="min-h-screen bg-white m-2 rounded-xl flex flex-col items-center">
-      
       <div className="w-full mt-11 flex justify-center">
         <img
           className="w-[100px] h-[100px] object-cover  rounded-full"

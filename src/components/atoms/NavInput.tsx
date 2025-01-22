@@ -1,7 +1,5 @@
 import { Glass } from '../icons';
 
-
-
 const NavInput = () => {
   return (
     <div className="w-full flex justify-center items-center">

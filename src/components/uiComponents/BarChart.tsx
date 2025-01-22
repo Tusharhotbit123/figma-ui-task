@@ -13,7 +13,15 @@ const BarChart = ({ className }: className) => {
     datasets: [
       {
         label: 'Withdraw', // Black bar
-        data: [Math.floor(Math.random() * 501),Math.floor(Math.random() * 501),Math.floor(Math.random() * 501),Math.floor(Math.random() * 501),Math.floor(Math.random() * 501),Math.floor(Math.random() * 501),Math.floor(Math.random() * 501)],
+        data: [
+          Math.floor(Math.random() * 501),
+          Math.floor(Math.random() * 501),
+          Math.floor(Math.random() * 501),
+          Math.floor(Math.random() * 501),
+          Math.floor(Math.random() * 501),
+          Math.floor(Math.random() * 501),
+          Math.floor(Math.random() * 501),
+        ],
         backgroundColor: [
           '#232323',
           '#232323',

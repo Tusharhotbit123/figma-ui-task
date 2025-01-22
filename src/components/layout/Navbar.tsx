@@ -6,14 +6,14 @@ import { NavContext } from '../../context/navContext/Navcontext';
 
 const Navbar = () => {
   const { img } = useContext(ImageContext);
-  const {setActiveWidth}=useContext(NavContext)
+  const { setActiveWidth } = useContext(NavContext);
 
   return (
-    <div className="border-4 w-full h-36 flex flex-col items-center md:flex-row md:justify-between md:px-8">
+    <div className="min-w-full h-36 flex flex-col items-center md:flex-row md:justify-between  md:h-24 md:px-8">
       <div className="flex w-full justify-around items-center mt-6 md:hidden">
         <img
-          onClick={()=>setActiveWidth('w-full')}
-          className="h-4 w-5"
+          onClick={() => setActiveWidth('w-full')}
+          className="h-4 w-5 cursor-pointer"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png"
           alt="Menu"
         />
@@ -27,7 +27,7 @@ const Navbar = () => {
         <h1 className="text-lg font-semibold text-indigo-900">Overview</h1>
       </div>
 
-      <div className=' w-full flex items-center justify-center min-w-max md:justify-around '>
+      <div className=" w-full flex items-center justify-center md:justify-between min-w-max  ">
         <div className="w-4/5 md:min-w-max  px-2 mt-5 md:mt-0">
           <NavInput />
         </div>
