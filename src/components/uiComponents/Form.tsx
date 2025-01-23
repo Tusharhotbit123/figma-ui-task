@@ -35,16 +35,13 @@ const Form = () => {
   return (
     <div className="min-h-screen bg-white m-2 rounded-xl flex flex-col items-center">
       <div className="w-full mt-11 flex justify-center">
-        <img
-          className="w-[100px] h-[100px] object-cover  rounded-full"
-          src={img}
-        />
+        <img className="w-24 h-24 object-cover  rounded-full" src={img} />
 
         <div className="h-8 w-8 bg-black rounded-full flex items-center relative right-6 top-16 ">
           <img src={pencil} className="h-3 w-3 relative left-3" />
           <input
             type="file"
-            accept="image/*" // Restrict to image files only
+            accept="image/*"
             onChange={handleImageUpload}
             className=" bg-black rounded-full opacity-0 cursor-pointer"
           />
@@ -67,7 +64,7 @@ const Form = () => {
                 />
               );
             })}
-            <button className="w-[285px] h-10 border rounded-lg text-white bg-[#232323] font-medium text-base">
+            <button className="w-72 h-10 border rounded-lg text-white bg-gray-900 font-medium text-base">
               Save
             </button>
           </form>

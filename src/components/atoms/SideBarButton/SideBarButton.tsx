@@ -21,7 +21,7 @@ const SideBarButton = ({
         <Link to={title === 'Dashboard' ? '' : title.toLowerCase()}>
           <button
             onClick={() => setActive(id)}
-            className={`font-medium text-xl ml-2 ${active === id ? 'text-black' : 'text-[#B1B1B1]'}`}
+            className={`font-medium text-xl ml-2 ${active === id ? 'text-black' : 'text-gray-400'}`}
           >
             {title}
           </button>

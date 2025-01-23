@@ -8,24 +8,24 @@ import FormInput from '../../components/atoms/formInput/FormInput';
 import formData from '../../components/atoms/formInput/formData';
 import { useContext } from 'react';
 import { ImageContext } from '../../context/imageContext/ImageContext';
-import pencil from '../../assets/images/pencil.png';
+import { Pencil } from '../../components/icons';
 
 const Setting = () => {
   const { img, handleImageUpload } = useContext(ImageContext);
   const method = useForm();
 
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
-    console.log('Form data:', data); // Output form data
+    console.log('Form data:', data);
   };
 
   return (
     <div className="bg-white rounded-3xl m-4 min-h-max pt-4 md:max-w-max ">
       <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-2 lg:justify-start ">
-        <button className="text-[#232323] underline decoration-[2px] underline-offset-[10px] lg:px-8 lg:ml-24">
+        <button className="text-gray-900 underline decoration-2 underline-offset-8 lg:px-8 lg:ml-24">
           Edit Profiile
         </button>
-        <button className="text-[#718EBF] lg:px-8 ">Preferences</button>
-        <button className="text-[#718EBF] lg:px-8">Security</button>
+        <button className="text-slate-400 lg:px-8 ">Preferences</button>
+        <button className="text-slate-400 lg:px-8">Security</button>
       </div>
 
       <div className=" flex justify-center mt-11 lg:hidden">
@@ -36,7 +36,9 @@ const Setting = () => {
         />
 
         <div className="bg-black h-6 w-6 rounded-full flex items-center justify-around relative top-14 right-4">
-          <img src={pencil} className="h-3 w-3 relative left-1" />
+          <div className="relative left-2">
+            <Pencil />
+          </div>
           <input
             type="file"
             accept="image/*"
@@ -54,8 +56,10 @@ const Setting = () => {
             className="h-24 w-24 rounded-full"
           />
 
-          <div className="bg-black h-6 w-6 rounded-full flex items-center justify-around relative top-14 right-4">
-            <img src={pencil} className="h-3 w-3 relative left-1" />
+          <div className="bg-black h-8 w-8 rounded-full flex items-center justify-around relative top-14 right-4">
+            <div className="relative left-3">
+              <Pencil />
+            </div>
             <input
               type="file"
               accept="image/*"

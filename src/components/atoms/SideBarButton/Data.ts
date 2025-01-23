@@ -53,7 +53,7 @@ const arr = [
   },
   {
     id: 9,
-    title: 'Setting',
+    title: 'Settings',
     image: SettingIcon,
   },
 ];

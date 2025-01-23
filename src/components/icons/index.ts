@@ -18,3 +18,6 @@ export * from './Paypal';
 export * from './Jemi';
 export * from './Chip';
 export * from './Vector';
+export * from './NewChip';
+export * from './Arrow';
+export * from './Pencil';

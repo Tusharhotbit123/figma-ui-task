@@ -16,11 +16,11 @@ const Sidebar = ({ className, name }: props) => {
   return (
     <div className={className}>
       <div className={name}>
-        <div className="flex  mt-6 md:relative md:right-2">
-          <div>
+        <div className="flex  mt-6 md:relative md:top-2 md:pb-8">
+          <div className="md:relative md:right-2">
             <Logo />
           </div>
-          <h1 className="text-[#343C6A] whitespace-nowrap relative left-5 font-extrabold text-2xl ">
+          <h1 className="text-indigo-900 whitespace-nowrap relative left-3 font-extrabold text-2xl ">
             Soar Task
           </h1>
         </div>
@@ -30,16 +30,16 @@ const Sidebar = ({ className, name }: props) => {
           className=" bottom-1 transalte transform-all hover:scale-110 md:hidden"
         >
           <img
-            className="h-9 w-9 cursor-pointer"
+            className="h-9 w-9 cursor-pointer "
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPVf2NCDlgM-TTW__M19bco-eUFEPzptPHzQ&s"
           />
         </button>
       </div>
-      <div className="md:relative md:bottom-24">
+      <div>
         {buttonData.map((element) => (
           <div key={element.id} className="flex pl-2 items-center ">
             <div
-              className={` h-14  mr-8 w-2 rounded-3xl  ${active === element.id ? 'bg-[#232323]' : 'bg-white'}`}
+              className={` h-14  mr-8 w-2 rounded-3xl  ${active === element.id ? 'bg-gray-900' : 'bg-white'}`}
             ></div>
             <SideBarButton
               active={active}

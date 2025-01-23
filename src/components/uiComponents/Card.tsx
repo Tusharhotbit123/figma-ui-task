@@ -1,60 +1,52 @@
-// import Chip from '../../assets/images/Chip_Card.png';
+import { NewChip } from '../icons/NewChip';
 import Ellipse from '../icons/Ellipse';
-import Chip from '../icons/Chip';
 
 interface props {
-  cName?: string;
-  cardHolder?: string;
-  bottom?: string;
-  balance?: string;
-  borderBottom?: string;
-  color?: string;
-  ellipse?: string;
+  className?: string;
+  footer?: string;
+  name?: string;
 }
 
 const Card = ({
-  cName,
-  cardHolder,
-  bottom,
-  balance,
-  borderBottom,
-  color,
-  ellipse,
+  className = 'bg-black text-white',
+  footer = 'bg-black',
+  name = 'white',
 }: props) => {
   return (
-    <div className={cName}>
-      <div className="w-full h-40">
-        <div className="flex  justify-around pt-6 ">
-          <div className="relative right-8">
-            <h1 className={balance}>Balance</h1>
-            <h1 className="font-semibold text-xl">$5000</h1>
-          </div>
-          <div className="mt-1 relative left-10">
-            {/* <img className="w-9 h-9 relative left-8" src={Chip} /> */}
-            <Chip color={color} />
-          </div>
+    <div
+      className={`min-h-max w-96 md:w-full  ${className} rounded-3xl  flex flex-col items-center`}
+    >
+      <div className=" w-full flex justify-between px-5 items-center mt-6 mb-8">
+        <div className="flex flex-col ">
+          <h1 className="font-normal text-xs">Balance</h1>
+          <h1 className="font-semibold text-xl">$5,756</h1>
         </div>
-        <div className="flex justify-around  mt-8">
-          <div className="relative right-4">
-            <p className={cardHolder}>CARD HOLDER</p>
-            <h1 className="font-semibold text-base">Eddy Cusuma</h1>
-          </div>
-          <div className="relative right-12">
-            <p className={cardHolder}>VALID THRU</p>
-            <h1 className="font-semibold text-base">12/22</h1>
-          </div>
+        <div>
+          <NewChip width="35" height="35" />
         </div>
       </div>
-      <div className={bottom}>
-        <h1 className="font-semibold text-xl relative left-2">
-          3778**** ****1234
-        </h1>
-        <div className={borderBottom}>
+      <div className={`w-full flex justify-between px-5 items-center mb-6`}>
+        <div className="flex flex-col ">
+          <h1 className={`${name} font-normal text-xs`}>CARD HOLDER</h1>
+          <h1 className="font-semibold text-base">Eddy Cusuma</h1>
+        </div>
+        <div className="relative right-16">
+          <h1 className={`${name} font-normal text-xs `}>VALID THRU</h1>
+          <h1 className="font-semibold text-base">12/22</h1>
+        </div>
+      </div>
+      <div
+        className={`h-20  ${footer} rounded-b-3xl w-full flex justify-between px-5 items-center`}
+      >
+        <div>
+          <h1 className="font-semibold text-2xl">3778 **** **** 1234</h1>
+        </div>
+        <div className="flex">
           <div className="relative left-3">
-            <Ellipse color={ellipse} />
+            <Ellipse color="white" />
           </div>
           <div>
-            <Ellipse color={ellipse} />
+            <Ellipse color="white" />
           </div>
         </div>
       </div>

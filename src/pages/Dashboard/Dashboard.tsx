@@ -4,12 +4,17 @@ import Card from '../../components/uiComponents/Card';
 import PieChart from '../../components/uiComponents/PieChart';
 import QuickTransfer from '../../components/uiComponents/QuickTransfer';
 import Transaction from '../../components/uiComponents/Transaction';
+import DashboardLg from '../../components/uiComponents/DashboardLg';
+import DashboardMd from '../../components/uiComponents/DashboardMd';
+import DashboardMobile from '../../components/uiComponents/DashboardMobile';
 
 const Dashboard = () => {
   return (
-    <div className="bg-slate-200 min-w-max min-h-screen  ">
-     
-    </div>
+    <>
+      <DashboardMobile />
+      <DashboardMd />
+      <DashboardLg />
+    </>
   );
 };
 
