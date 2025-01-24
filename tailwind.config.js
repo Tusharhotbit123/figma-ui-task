@@ -6,6 +6,9 @@ export default {
       fontSize: {
         lg: '28px',
       },
+      colors:{
+        customBlue: '#718EBF'
+      }
     },
   },
   plugins: [],

@@ -14,7 +14,7 @@ const SideBarButton = ({
         <Icon
           height="25"
           width="25"
-          color={active === id ? 'black' : '#B1B1B1'}
+          color={active === id ? 'black' : 'gray'}
         />
       </div>
       <div className="w-3/4 h-6 bg-slate">

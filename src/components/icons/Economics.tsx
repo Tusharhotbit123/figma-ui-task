@@ -3,7 +3,7 @@ import { IIconProps } from './type';
 export const Economics = ({
   height = '25',
   width = '25',
-  color = '#B1B1B1',
+  color = 'gray',
 }) => {
   return (
     <svg

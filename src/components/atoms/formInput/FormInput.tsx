@@ -23,7 +23,7 @@ const FormInput = ({
         <label className="min-w-max  flex flex-col text-xs text-gray-900 mx-4">
           {label}
           <input
-            className="w-full h-10 border rounded-xl mt-2 focus:ring-0 focus:outline-none border-sky-100 pl-4 placeholder-blue-500  font-normal "
+            className="w-full h-10 border rounded-xl mt-2 focus:ring-0 focus:outline-none border-sky-100 pl-4 placeholder-customBlue  font-normal "
             type={type}
             {...register(name, validation)}
             placeholder={placeholder}

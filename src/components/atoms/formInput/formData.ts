@@ -1,4 +1,4 @@
-const arr = [
+const FormData = [
   {
     name: 'name',
     label: 'Full Name',
@@ -113,4 +113,4 @@ const arr = [
   },
 ];
 
-export default arr;
+export default FormData;

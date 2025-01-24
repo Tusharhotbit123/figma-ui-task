@@ -162,12 +162,10 @@ const Options: ChartOptions<'bar'> = {
 };
 
 const BarChart = ({ className }: className) => {
-  const data = Data;
-
-  const options: ChartOptions<'bar'> = Options;
+  
   return (
     <div className={className}>
-      <Bar data={data} options={options} />
+      <Bar data={Data} options={Options} />
     </div>
   );
 };

@@ -10,7 +10,7 @@ import {
   SettingIcon,
 } from '../../icons';
 
-const arr = [
+const SideBarData = [
   {
     id: 1,
     title: 'Dashboard',
@@ -58,4 +58,4 @@ const arr = [
   },
 ];
 
-export default arr;
+export default SideBarData;

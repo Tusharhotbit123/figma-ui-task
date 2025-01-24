@@ -3,7 +3,7 @@ import { IIconProps } from './type';
 const Arrow = ({
   width = '20',
   height = '20',
-  color = '#708CBE',
+
 }: IIconProps) => {
   return (
     <svg
