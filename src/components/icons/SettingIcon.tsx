@@ -1,10 +1,10 @@
-import { IIconProps } from './type';
+import { IconProps } from './type';
 
 export const SettingIcon = ({
   height = '25',
   width = '25',
-  color = '#B1B1B1',
-}) => {
+  color = 'gray',
+}:IconProps) => {
   return (
     <svg
       width={width}

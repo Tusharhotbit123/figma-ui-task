@@ -15,7 +15,7 @@ const Setting = () => {
   const method = useForm();
 
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
-    console.log('Form data:', data);
+    console.log('Form data:', data);  
   };
 
   return (

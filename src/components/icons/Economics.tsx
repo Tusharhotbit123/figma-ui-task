@@ -1,10 +1,10 @@
-import { IIconProps } from './type';
+import { IconProps } from './type';
 
 export const Economics = ({
   height = '25',
   width = '25',
   color = 'gray',
-}) => {
+}:IconProps) => {
   return (
     <svg
       width={width}

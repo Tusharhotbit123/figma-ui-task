@@ -7,7 +7,13 @@ export default {
         lg: '28px',
       },
       colors:{
-        customBlue: '#718EBF'
+        customBlue: '#718EBF',
+        customGray:'#B1B1B1',
+        customLightBlue: '#E7EDFF',
+        customVibrantBlue:'#396AFF',
+        customDarkGray:'#232323',
+        customVibrantCyan:'#16DBCC',
+        customVibrantYellow:'#FFBB38'
       }
     },
   },

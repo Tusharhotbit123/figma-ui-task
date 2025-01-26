@@ -1,10 +1,10 @@
-import { IIconProps } from './type';
+import { IconProps } from './type';
 
 const Arrow = ({
   width = '20',
   height = '20',
 
-}: IIconProps) => {
+}: IconProps) => {
   return (
     <svg
       width={width}

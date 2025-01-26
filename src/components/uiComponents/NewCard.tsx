@@ -22,8 +22,8 @@ const Card = ({
 }: props) => {
   return (
     <div className={cName}>
-      <div className="w-full  h-40 flex flex-col justify-between">
-        <div className="flex justify-around pt-6">
+      <div className="w-full  h-40 flex flex-col justify-between ">
+        <div className="flex justify-around pt-6 items-center">
           <div className=" w-3/4 pl-6">
             <h1 className={balance}>Balance</h1>
             <h1 className="font-semibold text-xl">$5000</h1>
@@ -32,7 +32,7 @@ const Card = ({
             <NewChip color={color} />
           </div>
         </div>
-        <div className="flex justify-around mt-8">
+        <div className="flex justify-around mt-6 mb-6">
           <div className="relative right-4">
             <p className={cardHolder}>CARD HOLDER</p>
             <h1 className="font-semibold text-base">Eddy Cusuma</h1>

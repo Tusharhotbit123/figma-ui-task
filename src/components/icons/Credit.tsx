@@ -1,10 +1,10 @@
-import { IIconProps } from './type';
+import { IconProps } from './type';
 
 export const Credit = ({
   height = '26',
   width = '26',
-  color = '#B1B1B1',
-}: IIconProps) => {
+  color = 'gray',
+}: IconProps) => {
   return (
     <svg
       width={width}

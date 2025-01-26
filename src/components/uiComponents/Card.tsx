@@ -1,4 +1,4 @@
-import { NewChip } from '../icons/NewChip';
+import Chip from '../icons/Chip';
 import Ellipse from '../icons/Ellipse';
 
 interface props {
@@ -22,7 +22,7 @@ const Card = ({
           <h1 className="font-semibold text-xl">$5,756</h1>
         </div>
         <div>
-          <NewChip width="35" height="35" />
+          <Chip width="35" height="35" />
         </div>
       </div>
       <div className={`w-full flex justify-between px-5 items-center mb-6`}>
@@ -39,7 +39,7 @@ const Card = ({
         className={`h-20  ${footer} rounded-b-3xl w-full flex justify-between px-5 items-center`}
       >
         <div>
-          <h1 className="font-semibold text-2xl">3778 **** **** 1234</h1>
+          <h1 className="font-semibold text-xl">3778 **** **** 1234</h1>
         </div>
         <div className="flex">
           <div className="relative left-3">

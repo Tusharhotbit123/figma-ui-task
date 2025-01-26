@@ -1,6 +1,6 @@
-import { IIconProps } from './type';
+import { IconProps } from './type';
 
-export const NewChip = ({ width = '35', height = '35' }: IIconProps) => {
+export const NewChip = ({ width = '35', height = '35' }: IconProps) => {
   return (
     <svg
       width={width}

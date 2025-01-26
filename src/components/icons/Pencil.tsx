@@ -1,10 +1,10 @@
-import { IIconProps } from './type';
+import { IconProps } from './type';
 
 export const Pencil = ({
   width = '15',
   height = '15',
   color = 'white',
-}: IIconProps) => {
+}: IconProps) => {
   return (
     <svg
       width={width}

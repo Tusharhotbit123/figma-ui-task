@@ -1,10 +1,10 @@
-import { IIconProps } from './type';
+import { IconProps } from './type';
 
 const Vector = ({
   width = '26',
   height = '23',
   color = 'white',
-}: IIconProps) => {
+}: IconProps) => {
   return (
     <svg
       width={width}

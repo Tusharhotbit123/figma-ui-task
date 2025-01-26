@@ -1,10 +1,10 @@
-import { IIconProps } from './type';
+import { IconProps } from './type';
 
 export const Gylph = ({
   height = '25',
   width = '25',
-  color = '#B1B1B1',
-}: IIconProps) => {
+  color = 'gray',
+}: IconProps) => {
   return (
     <svg
       width={width}

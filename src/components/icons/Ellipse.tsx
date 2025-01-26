@@ -1,10 +1,10 @@
-import { IIconProps } from './type';
+import { IconProps } from './type';
 
 const Ellipse = ({
   width = '30',
   height = '30',
-  color = '#9199AF',
-}: IIconProps) => {
+  color = 'gray',
+}: IconProps) => {
   return (
     <svg
       width={width}

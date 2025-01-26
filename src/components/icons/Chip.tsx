@@ -1,6 +1,6 @@
-import { IIconProps } from './type';
+import { IconProps } from './type';
 
-const Chip = ({ width = '35', height = '35'}: IIconProps) => {
+const Chip = ({ width = '35', height = '35'}: IconProps) => {
   return (
     //white
     <svg
