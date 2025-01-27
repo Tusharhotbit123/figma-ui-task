@@ -10,7 +10,7 @@ const Data = {
   labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri'],
   datasets: [
     {
-      label: 'Withdraw', 
+      label: 'Withdraw',
       data: [
         Math.floor(Math.random() * 501),
         Math.floor(Math.random() * 501),
@@ -45,7 +45,7 @@ const Data = {
       barPercentage: 0.7,
     },
     {
-      label: 'Deposit', 
+      label: 'Deposit',
       data: [230, 120, 260, 380, 240, 240, 320],
       backgroundColor: [
         '#396AFF',
@@ -91,13 +91,11 @@ const Options: ChartOptions<'bar'> = {
         color: '#718EBF',
         usePointStyle: true,
         generateLabels: function (chart) {
-         
           const labels =
             Chart.defaults.plugins.legend.labels.generateLabels(chart);
 
-         
           return labels.sort((a, b) => {
-            if (a.text === 'Diposit') return -1; 
+            if (a.text === 'Diposit') return -1;
             if (b.text === 'Withdraw') return 1;
             return 0;
           });
@@ -154,14 +152,13 @@ const Options: ChartOptions<'bar'> = {
         color: '#718EBF',
       },
       border: {
-        color: 'transparent', 
+        color: 'transparent',
       },
     },
   },
 };
 
 const BarChart = ({ className }: className) => {
-  
   return (
     <div className={className}>
       <Bar data={Data} options={Options} />

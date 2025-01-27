@@ -1,10 +1,10 @@
 import { Doughnut } from 'react-chartjs-2';
-import { ChartOptions} from 'chart.js';
+import { ChartOptions } from 'chart.js';
 import 'chart.js/auto';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 const Data = {
-  labels: ['A', 'B', 'C', 'D'],
+  labels: ['', '', '', ''],
   datasets: [
     {
       data: [

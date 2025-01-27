@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ImageContext } from '../../context/imageContext/ImageContext';
 import NavInput from '../atoms/NavInput';
 import { Settings, Notifications } from '../icons';
@@ -7,6 +8,12 @@ import { NavContext } from '../../context/navContext/Navcontext';
 const Navbar = () => {
   const { img } = useContext(ImageContext);
   const { setActiveWidth } = useContext(NavContext);
+
+  const navigate=useNavigate()
+
+  const handleClick=()=>{
+    navigate("/settings")
+  }
 
   return (
     <div className="min-w-full h-36 flex flex-col items-center  md:flex-row md:justify-between  md:h-24 md:px-8">
@@ -34,9 +41,9 @@ const Navbar = () => {
 
         <div className="hidden md:flex w-full items-center justify-center">
           <div className="flex items-center space-x-4">
-            <div className="bg-gray-100 h-12 w-12 rounded-full flex items-center justify-center">
+            <button onClick={handleClick} className="bg-gray-100 h-12 w-12 rounded-full flex items-center justify-center">
               <Settings />
-            </div>
+            </button>
             <div className="bg-gray-100 h-12 w-12 rounded-full flex items-center justify-center">
               <Notifications />
             </div>

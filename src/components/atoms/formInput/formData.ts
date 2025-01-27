@@ -3,7 +3,7 @@ const FormData = [
     name: 'name',
     label: 'Full Name',
     placeholder: 'Charlene Reed',
-    type: 'text', // Text input
+    type: 'text',
     validation: {
       required: 'Full Name is required',
       minLength: {
@@ -17,7 +17,7 @@ const FormData = [
     name: 'username',
     label: 'Username',
     placeholder: 'Charlene Reed',
-    type: 'text', // Text input
+    type: 'text',
     validation: {
       required: 'Username is required',
       minLength: {
@@ -31,7 +31,7 @@ const FormData = [
     name: 'email',
     label: 'Email',
     placeholder: 'charlenereed@gmail.com',
-    type: 'email', // Email input
+    type: 'email',
     validation: {
       required: 'Email is required',
       pattern: {
@@ -44,7 +44,7 @@ const FormData = [
     name: 'password',
     label: 'Password',
     placeholder: '*************',
-    type: 'password', // Password input
+    type: 'password',
     validation: {
       required: 'Password is required',
       minLength: {
@@ -57,7 +57,7 @@ const FormData = [
     name: 'dob',
     label: 'Date of Birth',
     placeholder: '25 Jan 1990',
-    type: 'date', // Date input
+    type: 'date',
     validation: {
       required: 'Date of Birth is required',
     },
@@ -66,7 +66,7 @@ const FormData = [
     name: 'presentAddress',
     label: 'Present Address',
     placeholder: 'San Jose, California, USA',
-    type: 'text', // Text input
+    type: 'text',
     validation: {
       required: 'Present Address is required',
     },
@@ -75,7 +75,7 @@ const FormData = [
     name: 'permanentAddress',
     label: 'Permanent Address',
     placeholder: 'San Jose, California, USA',
-    type: 'text', // Text input
+    type: 'text',
     validation: {
       required: 'Permanent Address is required',
     },
@@ -84,7 +84,7 @@ const FormData = [
     name: 'city',
     label: 'City',
     placeholder: 'San Jose',
-    type: 'text', // Text input
+    type: 'text',
     validation: {
       required: 'City is required',
     },
@@ -93,7 +93,7 @@ const FormData = [
     name: 'postalCode',
     label: 'Postal Code',
     placeholder: '45962',
-    type: 'text', // Text input
+    type: 'text',
     validation: {
       required: 'Postal Code is required',
       pattern: {
@@ -106,7 +106,7 @@ const FormData = [
     name: 'country',
     label: 'Country',
     placeholder: 'USA',
-    type: 'text', // Text input
+    type: 'text',
     validation: {
       required: 'Country is required',
     },

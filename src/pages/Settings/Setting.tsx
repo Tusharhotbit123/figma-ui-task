@@ -6,26 +6,95 @@ import {
 } from 'react-hook-form';
 import FormInput from '../../components/atoms/formInput/FormInput';
 import formData from '../../components/atoms/formInput/formData';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { ImageContext } from '../../context/imageContext/ImageContext';
 import { Pencil } from '../../components/icons';
 
 const Setting = () => {
+  const [tab, setTab] = useState('Edit Profile');
+
   const { img, handleImageUpload } = useContext(ImageContext);
   const method = useForm();
 
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
-    console.log('Form data:', data);  
+    console.log('Form data:', data);
   };
 
+  if (tab == 'Preferences') {
+    return (
+      <div className="bg-white rounded-3xl m-4 min-h-screen pt-4">
+        <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-2 lg:justify-start ">
+          <button
+            onClick={() => setTab('Edit Profile')}
+            className="text-slate-400 lg:px-8 lg:ml-24"
+          >
+            Edit Profiile
+          </button>
+          <button
+            onClick={() => setTab('Preferences')}
+            className="text-gray-900 underline decoration-2 underline-offset-8 lg:px-8"
+          >
+            Preferences
+          </button>
+          <button
+            onClick={() => setTab('Security')}
+            className="text-slate-400 lg:px-8"
+          >
+            Security
+          </button>
+        </div>
+        <div>Preferences</div>
+      </div>
+    );
+  } else if (tab == 'Security') {
+    return (
+      <div className="bg-white rounded-3xl m-4 min-h-lvh pt-4">
+        <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-2 lg:justify-start ">
+          <button
+            onClick={() => setTab('Edit Profile')}
+            className="text-slate-400 lg:px-8 lg:ml-24"
+          >
+            Edit Profiile
+          </button>
+          <button
+            onClick={() => setTab('Preferences')}
+            className="text-slate-400 lg:px-8 "
+          >
+            Preferences
+          </button>
+          <button
+            onClick={() => setTab('Security')}
+            className="text-gray-900 underline decoration-2 underline-offset-8 lg:px-8"
+          >
+            Security
+          </button>
+        </div>
+        <div >Security</div>
+      </div>
+    );
+  }
+
   return (
-    <div className="bg-white rounded-3xl m-4 min-h-max pt-4 md:max-w-max ">
+    <div className="bg-white rounded-3xl m-4 min-h-screen pt-4 md:max-w-max ">
       <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-2 lg:justify-start ">
-        <button className="text-gray-900 underline decoration-2 underline-offset-8 lg:px-8 lg:ml-24">
+        <button
+          onClick={() => setTab('Edit Profile')}
+          className="text-gray-900 underline decoration-2 underline-offset-8 lg:px-8 lg:ml-24"
+        >
           Edit Profiile
         </button>
-        <button className="text-slate-400 lg:px-8 ">Preferences</button>
-        <button className="text-slate-400 lg:px-8">Security</button>
+        <button
+          onClick={() => setTab('Preferences')}
+          className="text-slate-400 lg:px-8 "
+        >
+          Preferences
+        </button>
+        <button
+          onClick={() => setTab('Security')}
+          className="text-slate-400 lg:px-8"
+        >
+          Security
+        </button>
       </div>
 
       <div className=" flex justify-center mt-11 lg:hidden">

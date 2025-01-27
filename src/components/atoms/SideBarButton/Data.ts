@@ -33,7 +33,7 @@ const SideBarData = [
   },
   {
     id: 5,
-    title: 'Credit Cards',
+    title: 'CreditCards',
     image: Credit,
   },
   {
@@ -48,7 +48,7 @@ const SideBarData = [
   },
   {
     id: 8,
-    title: 'My Privileges',
+    title: 'MyPrivileges',
     image: Economics,
   },
   {

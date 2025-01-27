@@ -1,10 +1,7 @@
+import { IconProps } from "../../icons/type";
 export interface SideBarButtonProps {
   title: string;
-  component: React.ComponentType<{
-    height: string;
-    width: string;
-    color: string;
-  }>; // Icon component type
+  component:IconProps ;
   active: number | null | undefined;
   setActive: React.Dispatch<React.SetStateAction<number | null | undefined>>;
   id: number;

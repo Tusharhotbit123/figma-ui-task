@@ -7,10 +7,10 @@ interface props {
 }
 
 const Data = {
-  labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', ''], 
+  labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', ''],
   datasets: [
     {
-      label: 'Sales Over Time', 
+      label: 'Sales Over Time',
       data: [
         Math.floor(Math.random() * 801),
         Math.floor(Math.random() * 801),
@@ -20,9 +20,9 @@ const Data = {
         Math.floor(Math.random() * 801),
         Math.floor(Math.random() * 801),
         Math.floor(Math.random() * 801),
-      ], 
-      fill: true, 
-      borderColor: '#396AFF', 
+      ],
+      fill: true,
+      borderColor: '#396AFF',
       backgroundColor: (context: ScriptableContext<'line'>) => {
         const bgColor = ['rgba(45, 96, 255, 0.25)', 'rgba(45, 96, 255, 0) '];
 
@@ -40,13 +40,13 @@ const Data = {
         gradientBg.addColorStop(0, bgColor[0]);
         gradientBg.addColorStop(1, bgColor[1]);
         return gradientBg;
-      }, 
-      borderWidth: 3, 
-      tension: 0.3, 
-      pointBackgroundColor: '#fff', 
-      pointBorderColor: '#396AFF', 
-      pointRadius: 0, 
-      pointHoverRadius: 7, 
+      },
+      borderWidth: 3,
+      tension: 0.3,
+      pointBackgroundColor: '#fff',
+      pointBorderColor: '#396AFF',
+      pointRadius: 0,
+      pointHoverRadius: 7,
     },
   ],
 };
@@ -56,7 +56,7 @@ const Options: ChartOptions<'line'> = {
   plugins: {
     legend: {
       display: false,
-      position: 'top', 
+      position: 'top',
       labels: {
         font: {
           size: 14,
@@ -68,7 +68,7 @@ const Options: ChartOptions<'line'> = {
     tooltip: {
       callbacks: {
         label: (tooltipItem: any) => {
-          return `${tooltipItem.dataset.label}: ${tooltipItem.raw}`; 
+          return `${tooltipItem.dataset.label}: ${tooltipItem.raw}`;
         },
       },
     },
@@ -113,8 +113,6 @@ const Options: ChartOptions<'line'> = {
 };
 
 const LineChart = ({ className }: props) => {
-  
-
   return (
     <div className={className}>
       <Line data={Data} options={Options} />

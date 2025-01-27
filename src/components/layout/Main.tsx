@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Dashboard from '../../pages/Dashboard/Dashboard';
 import Setting from '../../pages/Settings/Setting';
+import NotFound from '../../pages/Errors/NotFound';
 
 const Main = () => {
   return (
@@ -8,6 +9,7 @@ const Main = () => {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/settings" element={<Setting />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

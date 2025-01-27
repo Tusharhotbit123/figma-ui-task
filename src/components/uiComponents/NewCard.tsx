@@ -24,16 +24,16 @@ const Card = ({
     <div className={cName}>
       <div className="w-full  h-40 flex flex-col justify-between ">
         <div className="flex justify-around pt-6 items-center">
-          <div className=" w-3/4 pl-6">
+          <div className=" w-3/4 pl-1">
             <h1 className={balance}>Balance</h1>
             <h1 className="font-semibold text-xl">$5000</h1>
           </div>
-          <div className="flex justify-end pr-4 w-auto">
+          <div className="flex justify-end relative right-1 w-auto">
             <NewChip color={color} />
           </div>
         </div>
         <div className="flex justify-around mt-6 mb-6">
-          <div className="relative right-4">
+          <div className="relative right-9">
             <p className={cardHolder}>CARD HOLDER</p>
             <h1 className="font-semibold text-base">Eddy Cusuma</h1>
           </div>
@@ -44,7 +44,7 @@ const Card = ({
         </div>
       </div>
       <div className={bottom}>
-        <h1 className="font-semibold text-xl relative left-2">
+        <h1 className="font-semibold text-xl relative right-4">
           3778**** ****1234
         </h1>
         <div className={borderBottom}>

@@ -1,10 +1,6 @@
 import { IconProps } from './type';
 
-const Arrow = ({
-  width = '20',
-  height = '20',
-
-}: IconProps) => {
+const Arrow = ({ width = '20', height = '20' }: IconProps) => {
   return (
     <svg
       width={width}

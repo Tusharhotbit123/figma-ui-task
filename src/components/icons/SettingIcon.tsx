@@ -4,7 +4,7 @@ export const SettingIcon = ({
   height = '25',
   width = '25',
   color = 'gray',
-}:IconProps) => {
+}: IconProps) => {
   return (
     <svg
       width={width}
