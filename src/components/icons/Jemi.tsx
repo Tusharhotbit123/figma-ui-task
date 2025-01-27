@@ -1,6 +1,6 @@
 import { IconProps } from './type';
 
-const Jemi = ({
+export const Jemi = ({
   height = '55',
   width = '55',
   color = 'text-customVibrantCyan',
@@ -23,4 +23,4 @@ const Jemi = ({
   );
 };
 
-export default Jemi;
+

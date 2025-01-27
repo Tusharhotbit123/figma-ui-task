@@ -9,14 +9,15 @@ const Navbar = () => {
   const { img } = useContext(ImageContext);
   const { setActiveWidth } = useContext(NavContext);
 
-  const navigate=useNavigate()
+  const navigate = useNavigate();
 
-  const handleClick=()=>{
-    navigate("/settings")
-  }
+  
+  const handleNavigateSettings = () => {
+    navigate('/settings');
+  };
 
   return (
-    <div className="min-w-full h-36 flex flex-col items-center  md:flex-row md:justify-between  md:h-24 md:px-8">
+    <div className="sticky top-0 z-50 bg-white min-w-full  h-36 flex flex-col items-center  md:flex-row md:justify-between  md:h-24 md:px-8">
       <div className="flex w-full justify-around items-center mt-6 md:hidden">
         <img
           onClick={() => setActiveWidth('w-full')}
@@ -41,7 +42,10 @@ const Navbar = () => {
 
         <div className="hidden md:flex w-full items-center justify-center">
           <div className="flex items-center space-x-4">
-            <button onClick={handleClick} className="bg-gray-100 h-12 w-12 rounded-full flex items-center justify-center">
+            <button
+              onClick={handleNavigateSettings}
+              className="bg-gray-100 h-12 w-12 rounded-full flex items-center justify-center"
+            >
               <Settings />
             </button>
             <div className="bg-gray-100 h-12 w-12 rounded-full flex items-center justify-center">

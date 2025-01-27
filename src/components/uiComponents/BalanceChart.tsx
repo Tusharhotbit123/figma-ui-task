@@ -77,7 +77,7 @@ const Options: ChartOptions<'line'> = {
   scales: {
     x: {
       grid: {
-        color:Colors.lineChartGrid,
+        color: Colors.lineChartGrid,
       },
       ticks: {
         color: Colors.barChartX,
@@ -96,11 +96,11 @@ const Options: ChartOptions<'line'> = {
       min: 0,
       max: 800,
       grid: {
-        color:Colors.lineChartGrid,
+        color: Colors.lineChartGrid,
       },
       ticks: {
         stepSize: 200,
-        color:Colors.barChartX,
+        color: Colors.barChartX,
         font: {
           weight: 'normal',
           size: 13,

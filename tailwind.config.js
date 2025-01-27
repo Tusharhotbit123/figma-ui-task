@@ -14,7 +14,7 @@ export default {
         customDarkGray: '#232323',
         customVibrantCyan: '#16DBCC',
         customVibrantYellow: '#FFBB38',
-        customPurple:"#343C6A"
+        customPurple: '#343C6A',
       },
     },
   },

@@ -12,7 +12,6 @@ import { Pencil } from '../../components/icons';
 
 const Setting = () => {
   const [tab, setTab] = useState('Edit Profile');
-
   const { img, handleImageUpload } = useContext(ImageContext);
   const method = useForm();
 
@@ -23,7 +22,7 @@ const Setting = () => {
   if (tab == 'Preferences') {
     return (
       <div className="bg-white rounded-3xl m-4 min-h-screen pt-4">
-        <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-2 lg:justify-start ">
+        <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-1 lg:justify-start ">
           <button
             onClick={() => setTab('Edit Profile')}
             className="text-slate-400 lg:px-8 lg:ml-24"
@@ -49,7 +48,7 @@ const Setting = () => {
   } else if (tab == 'Security') {
     return (
       <div className="bg-white rounded-3xl m-4 min-h-lvh pt-4">
-        <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-2 lg:justify-start ">
+        <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-1 lg:justify-start ">
           <button
             onClick={() => setTab('Edit Profile')}
             className="text-slate-400 lg:px-8 lg:ml-24"
@@ -69,14 +68,14 @@ const Setting = () => {
             Security
           </button>
         </div>
-        <div >Security</div>
+        <div>Security</div>
       </div>
     );
   }
 
   return (
     <div className="bg-white rounded-3xl m-4 min-h-screen pt-4 md:max-w-max ">
-      <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-2 lg:justify-start ">
+      <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-1 lg:justify-start ">
         <button
           onClick={() => setTab('Edit Profile')}
           className="text-gray-900 underline decoration-2 underline-offset-8 lg:px-8 lg:ml-24"
@@ -154,9 +153,12 @@ const Setting = () => {
                 />
               );
             })}
-            <button className="w-3/4 h-10 border rounded-lg text-white bg-black font-medium text-base lg:w-48 lg:h-12 lg:rounded-2xl lg:relative lg:right-3 lg:mt-2">
-              Save
-            </button>
+
+            <div className='w-full flex items-center justify-center lg:justify-end'>
+              <button className=" w-full md:w-64 mx-4 mt-2 h-10  rounded-lg text-white bg-black font-medium text-base lg:w-48 lg:h-12 lg:rounded-2xl lg:relative lg:right-3 lg:mt-2">
+                Save
+              </button>
+            </div>
           </form>
         </FormProvider>
       </div>

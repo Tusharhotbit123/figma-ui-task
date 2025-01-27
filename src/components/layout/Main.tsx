@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div className=" w-full min-h-screen bg-slate-200">
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/settings" element={<Setting />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

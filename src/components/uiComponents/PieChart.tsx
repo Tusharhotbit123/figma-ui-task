@@ -14,7 +14,12 @@ const Data = {
         Math.floor(Math.random() * 100),
         Math.floor(Math.random() * 100),
       ],
-      backgroundColor: [Colors.pieChart1,Colors.PieChart2, Colors.barChart1,Colors.barChart2],
+      backgroundColor: [
+        Colors.pieChart1,
+        Colors.PieChart2,
+        Colors.barChart1,
+        Colors.barChart2,
+      ],
       borderWidth: 8,
       hoverOffset: 10,
       hoverBorderColor: 'white',

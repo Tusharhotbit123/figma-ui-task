@@ -7,7 +7,6 @@ export const Home = ({
 }: IconProps) => {
   return (
     <svg
-      
       width={width}
       height={height}
       viewBox="0 0 25 25"

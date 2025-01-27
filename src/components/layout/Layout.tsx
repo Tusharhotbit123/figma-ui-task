@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { memo, useContext } from 'react';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Main from './Main';
@@ -34,4 +34,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default memo(Layout);

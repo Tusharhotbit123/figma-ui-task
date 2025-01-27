@@ -18,7 +18,7 @@ const FormInput = ({
     : undefined;
 
   return (
-    <div className="flex flex-col justify-center items-center w-full md:w-4/5 lg:w-1/2 lg:min-h-max md:mt-4">
+    <div className="flex  flex-col justify-center items-center w-full md:w-4/5 lg:w-1/2 lg:min-h-max md:mt-4">
       <div className=" w-full">
         <label className="min-w-max  flex flex-col text-xs text-gray-900 mx-4">
           {label}
@@ -31,7 +31,7 @@ const FormInput = ({
         </label>
       </div>
       <div className="ml-8 mt-1 flex justify-start  w-full">
-        <p>{errorMessage && <p className="text-red-700 ">{errorMessage}</p>}</p>
+        <p>{errorMessage && <p className="text-red-700 text-xs">{errorMessage}</p>}</p>
       </div>
     </div>
   );

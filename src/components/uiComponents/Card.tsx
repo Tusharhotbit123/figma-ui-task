@@ -5,18 +5,18 @@ interface props {
   className?: string;
   footer?: string;
   name?: string;
-  icon?:React.ReactNode;
-  cardnum?:string;
-  cardvals?:string;
+  icon?: React.ReactNode;
+  cardnum?: string;
+  cardvals?: string;
 }
 
 const Card = ({
   className = 'bg-black text-white',
   footer = 'bg-black',
   name = 'white',
-  cardnum="font-semibold text-xl",
-  cardvals="text-customPurple",
-  icon=<Chip/>
+  cardnum = 'font-semibold text-xl',
+  cardvals = 'text-customPurple',
+  icon = <Chip />,
 }: props) => {
   return (
     <div
@@ -27,9 +27,7 @@ const Card = ({
           <h1 className="font-normal text-xs">Balance</h1>
           <h1 className={`font-semibold ${cardvals} text-xl`}>$5,756</h1>
         </div>
-        <div>
-          {icon}
-        </div>
+        <div>{icon}</div>
       </div>
       <div className={`w-full flex justify-between px-5 items-center mb-6`}>
         <div className="flex flex-col ">

@@ -1,6 +1,6 @@
 import { IconProps } from './type';
 
-const Group = ({
+export const Group = ({
   width = '55',
   height = '55',
   color = 'text-customVibrantYellow',
@@ -31,4 +31,4 @@ const Group = ({
   );
 };
 
-export default Group;
+

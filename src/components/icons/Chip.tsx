@@ -2,7 +2,6 @@ import { IconProps } from './type';
 
 const Chip = ({ width = '35', height = '35' }: IconProps) => {
   return (
-    
     <svg
       width={width}
       height={height}

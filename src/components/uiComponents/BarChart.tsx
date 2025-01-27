@@ -138,19 +138,19 @@ const Options: ChartOptions<'bar'> = {
         font: {
           size: 13,
         },
-        color:Colors.barChartX,
+        color: Colors.barChartX,
       },
     },
     y: {
       grid: {
         display: true,
-        color:Colors.barChartYGrid,
+        color: Colors.barChartYGrid,
       },
       ticks: {
         font: {
           size: 13,
         },
-        color:Colors.barChartY,
+        color: Colors.barChartY,
       },
       border: {
         color: 'transparent',

@@ -1,7 +1,7 @@
 const FormData = [
   {
     name: 'name',
-    label: 'Full Name',
+    label: 'Your Name',
     placeholder: 'Charlene Reed',
     type: 'text',
     validation: {

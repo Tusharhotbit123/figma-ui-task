@@ -1,6 +1,6 @@
 import { IconProps } from './type';
 
-const Paypal = ({
+export const Paypal = ({
   height = '55',
   width = '55',
   color = 'text-customLightBlue',
@@ -23,4 +23,4 @@ const Paypal = ({
   );
 };
 
-export default Paypal;
+
