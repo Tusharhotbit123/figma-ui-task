@@ -2,6 +2,7 @@ import { Doughnut } from 'react-chartjs-2';
 import { ChartOptions } from 'chart.js';
 import 'chart.js/auto';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { Colors } from '../../utils/constants';
 
 const Data = {
   labels: ['', '', '', ''],
@@ -13,15 +14,15 @@ const Data = {
         Math.floor(Math.random() * 100),
         Math.floor(Math.random() * 100),
       ],
-      backgroundColor: ['#343C6A', '#FC7900', '#232323', '#396AFF'],
+      backgroundColor: [Colors.pieChart1,Colors.PieChart2, Colors.barChart1,Colors.barChart2],
       borderWidth: 8,
       hoverOffset: 10,
-      hoverBorderColor: '#FFFFFF',
+      hoverBorderColor: 'white',
     },
   ],
 };
 
-const customValues = [15, 50, 10, 25];
+const customValues = ['', '', '', ''];
 
 const Options: ChartOptions<'doughnut'> = {
   responsive: true,
@@ -38,13 +39,13 @@ const Options: ChartOptions<'doughnut'> = {
           const total = dataset.data.reduce((a: number, b: number) => a + b, 0);
           const value = tooltipItem.raw as number;
           const percentage = ((value / total) * 100).toFixed(0);
-          return `${tooltipItem.label}: ${percentage}%`;
+          return `${tooltipItem.label}: ${percentage}`;
         },
       },
     },
 
     datalabels: {
-      color: '#fff',
+      color: 'white',
       anchor: 'center',
       align: ['top', 'center', 'center', 'center'],
       textAlign: 'center',
@@ -58,7 +59,7 @@ const Options: ChartOptions<'doughnut'> = {
 
         const percentage = customValues[context.dataIndex];
 
-        return `${percentage}%\n${category}`;
+        return `${percentage}\n${category}`;
       },
     },
   },

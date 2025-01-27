@@ -1,6 +1,7 @@
 import { Bar } from 'react-chartjs-2';
 import { ChartOptions, Chart } from 'chart.js';
 import 'chart.js/auto';
+import { Colors } from '../../utils/constants';
 
 interface className {
   className?: string;
@@ -21,22 +22,22 @@ const Data = {
         Math.floor(Math.random() * 501),
       ],
       backgroundColor: [
-        '#232323',
-        '#232323',
-        '#232323',
-        '#232323',
-        '#232323',
-        '#232323',
-        '#232323',
+        Colors.barChart1,
+        Colors.barChart1,
+        Colors.barChart1,
+        Colors.barChart1,
+        Colors.barChart1,
+        Colors.barChart1,
+        Colors.barChart1,
       ],
       borderColor: [
-        '#232323',
-        '#232323',
-        '#232323',
-        '#232323',
-        '#232323',
-        '#232323',
-        '#232323',
+        Colors.barChart1,
+        Colors.barChart1,
+        Colors.barChart1,
+        Colors.barChart1,
+        Colors.barChart1,
+        Colors.barChart1,
+        Colors.barChart1,
       ],
       borderWidth: 1,
       borderRadius: [20, 20, 20, 20],
@@ -48,22 +49,22 @@ const Data = {
       label: 'Deposit',
       data: [230, 120, 260, 380, 240, 240, 320],
       backgroundColor: [
-        '#396AFF',
-        '#396AFF',
-        '#396AFF',
-        '#396AFF',
-        '#396AFF',
-        '#396AFF',
-        '#396AFF',
+        Colors.barChart2,
+        Colors.barChart2,
+        Colors.barChart2,
+        Colors.barChart2,
+        Colors.barChart2,
+        Colors.barChart2,
+        Colors.barChart2,
       ],
       borderColor: [
-        '#396AFF',
-        '#396AFF',
-        '#396AFF',
-        '#396AFF',
-        '#396AFF',
-        '#396AFF',
-        '#396AFF',
+        Colors.barChart2,
+        Colors.barChart2,
+        Colors.barChart2,
+        Colors.barChart2,
+        Colors.barChart2,
+        Colors.barChart2,
+        Colors.barChart2,
       ],
       borderWidth: 1,
       borderRadius: [20, 20, 20, 20],
@@ -88,14 +89,14 @@ const Options: ChartOptions<'bar'> = {
         padding: 30,
         boxWidth: 100,
         boxHeight: 100,
-        color: '#718EBF',
+        color: Colors.barChartX,
         usePointStyle: true,
         generateLabels: function (chart) {
           const labels =
             Chart.defaults.plugins.legend.labels.generateLabels(chart);
 
           return labels.sort((a, b) => {
-            if (a.text === 'Diposit') return -1;
+            if (a.text === 'Deposit') return -1;
             if (b.text === 'Withdraw') return 1;
             return 0;
           });
@@ -111,7 +112,7 @@ const Options: ChartOptions<'bar'> = {
         size: 18,
         weight: 'bold',
       },
-      color: '#333',
+      color: Colors.barChartGray,
       padding: {
         top: 20,
       },
@@ -137,19 +138,19 @@ const Options: ChartOptions<'bar'> = {
         font: {
           size: 13,
         },
-        color: '#718EBF',
+        color:Colors.barChartX,
       },
     },
     y: {
       grid: {
         display: true,
-        color: '#F3F3F5',
+        color:Colors.barChartYGrid,
       },
       ticks: {
         font: {
           size: 13,
         },
-        color: '#718EBF',
+        color:Colors.barChartY,
       },
       border: {
         color: 'transparent',

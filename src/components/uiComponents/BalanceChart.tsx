@@ -1,6 +1,7 @@
 import { Line } from 'react-chartjs-2';
 import { ChartOptions, ScriptableContext } from 'chart.js';
 import 'chart.js/auto';
+import { Colors } from '../../utils/constants';
 
 interface props {
   className?: string;
@@ -22,7 +23,7 @@ const Data = {
         Math.floor(Math.random() * 801),
       ],
       fill: true,
-      borderColor: '#396AFF',
+      borderColor: Colors.barChart2,
       backgroundColor: (context: ScriptableContext<'line'>) => {
         const bgColor = ['rgba(45, 96, 255, 0.25)', 'rgba(45, 96, 255, 0) '];
 
@@ -43,8 +44,8 @@ const Data = {
       },
       borderWidth: 3,
       tension: 0.3,
-      pointBackgroundColor: '#fff',
-      pointBorderColor: '#396AFF',
+      pointBackgroundColor: 'white',
+      pointBorderColor: Colors.barChart2,
       pointRadius: 0,
       pointHoverRadius: 7,
     },
@@ -62,7 +63,7 @@ const Options: ChartOptions<'line'> = {
           size: 14,
           weight: 'bold',
         },
-        color: '#333',
+        color: 'white',
       },
     },
     tooltip: {
@@ -76,10 +77,10 @@ const Options: ChartOptions<'line'> = {
   scales: {
     x: {
       grid: {
-        color: '#DFE5EE',
+        color:Colors.lineChartGrid,
       },
       ticks: {
-        color: '#718EBF',
+        color: Colors.barChartX,
         font: {
           weight: 'normal',
           size: 14,
@@ -95,11 +96,11 @@ const Options: ChartOptions<'line'> = {
       min: 0,
       max: 800,
       grid: {
-        color: '#DFE5EE',
+        color:Colors.lineChartGrid,
       },
       ticks: {
         stepSize: 200,
-        color: '#718EBF',
+        color:Colors.barChartX,
         font: {
           weight: 'normal',
           size: 13,
