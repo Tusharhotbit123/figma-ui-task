@@ -21,7 +21,7 @@ const Setting = () => {
 
   if (tab == 'Preferences') {
     return (
-      <div className="bg-white rounded-3xl m-4 min-h-screen pt-4">
+      <div className="bg-white rounded-3xl mx-6 mt-6 mb-14 min-h-screen pt-4">
         <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-1 lg:justify-start ">
           <button
             onClick={() => setTab('Edit Profile')}
@@ -47,7 +47,7 @@ const Setting = () => {
     );
   } else if (tab == 'Security') {
     return (
-      <div className="bg-white rounded-3xl m-4 min-h-lvh pt-4">
+      <div className="bg-white rounded-3xl mt-6 mx-6 mb-14 min-h-lvh pt-4">
         <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-1 lg:justify-start ">
           <button
             onClick={() => setTab('Edit Profile')}
@@ -74,7 +74,7 @@ const Setting = () => {
   }
 
   return (
-    <div className="bg-white rounded-3xl m-4 min-h-screen pt-4 md:max-w-max ">
+    <div className="bg-white rounded-3xl mt-6 mb-14 mx-6 min-h-screen pt-4 md:max-w-max ">
       <div className="flex justify-around font-medium text-sm mt-6  border-b-2 w-full pb-1 lg:justify-start ">
         <button
           onClick={() => setTab('Edit Profile')}
@@ -108,6 +108,8 @@ const Setting = () => {
             <Pencil />
           </div>
           <input
+            required
+            title="image required"
             type="file"
             accept="image/*"
             onChange={handleImageUpload}

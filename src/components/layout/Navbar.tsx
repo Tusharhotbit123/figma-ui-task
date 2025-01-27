@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-0 z-50 bg-white min-w-full  h-36 flex flex-col items-center  md:flex-row md:justify-between  md:h-24 md:px-8">
+    <div className="sticky top-0 z-30 bg-white min-w-full  h-36 flex flex-col items-center  md:flex-row md:justify-between  md:h-24 md:px-8">
       <div className="flex w-full justify-around items-center mt-6 md:hidden">
         <img
           onClick={() => setActiveWidth('w-full')}
@@ -36,7 +36,7 @@ const Navbar = () => {
       </div>
 
       <div className=" w-full flex items-center justify-center md:justify-between min-w-max  ">
-        <div className="w-4/5 md:min-w-max  px-2 mt-5 md:mt-0">
+        <div className="w-4/5 md:min-w-max  px-2 mt-5 mb-5 md:mb-0 md:mt-0">
           <NavInput />
         </div>
 

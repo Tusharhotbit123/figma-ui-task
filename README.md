@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# React Dashboard Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React Dashboard Application** built using modern tools like **Vite**, **Tailwind CSS**, **Prettier**, **ESLint**, and **React Router DOM**. It is designed to provide a clean and responsive UI with data visualization components (Bar Chart, Line Chart, Pie Chart) and a settings page with form validation powered by **React Hook Form**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+### 1. Dashboard Page
+- **Bar Chart**: Displays data trends in bar format.
+- **Line Chart**: Illustrates continuous data over time.
+- **Pie Chart**: Visualizes proportional data in a circular format.
+- **Credit Card Information**: Showcases a styled component displaying mock credit card data.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 2. Settings Page
+- **Form with Validation**: Multiple form fields for user preferences, personal information, and account settings.
+- Validation implemented using **React Hook Form** with appropriate error messages for invalid inputs.
 
-- Configure the top-level `parserOptions` property like this:
+### 3. Tools and Libraries
+- **Vite**: For lightning-fast development and builds.
+- **Tailwind CSS**: For modern, utility-first styling.
+- **Prettier**: For consistent code formatting.
+- **ESLint**: For maintaining code quality.
+- **React Router DOM**: For seamless navigation between the Dashboard and Settings pages.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+---
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
+Follow these steps to set up the project locally:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
-```
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Steps
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/react-dashboard.git

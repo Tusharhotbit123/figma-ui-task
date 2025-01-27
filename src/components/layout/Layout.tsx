@@ -11,7 +11,7 @@ const Layout = () => {
     <div className=" w-full min-h-screen md:flex">
       <div className="hidden md:block">
         <Sidebar
-          className=" flex flex-col justify-start items-center min-h-screen"
+          className="sticky top-0 flex flex-col justify-start items-center min-h-screen"
           name="flex items-center justify-center "
         />
       </div>
@@ -22,7 +22,7 @@ const Layout = () => {
         } transition-transform duration-300`}
       >
         <Sidebar
-          className=" flex flex-col  items-start   min-h-screen"
+          className=" sticky top-0 flex flex-col  items-start   min-h-screen"
           name=" w-4/5   flex justify-between ml-7 mb-6 mt-8"
         />
       </div>

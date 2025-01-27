@@ -20,7 +20,7 @@ const Card = ({
 }: props) => {
   return (
     <div
-      className={`min-h-max w-80 md:w-full lg:w-full  ${className} rounded-3xl  flex flex-col items-center`}
+      className={`min-h-max w-80 md:w-full lg:min-w-max  ${className} rounded-3xl  flex flex-col items-center`}
     >
       <div className=" w-full flex justify-between px-5 items-center mt-6 mb-8">
         <div className="flex flex-col ">
