@@ -1,36 +1,58 @@
-import React from 'react';
-import Livia from '../../assets/images/Livia.png';
-import Randy from '../../assets/images/Randy.png';
-import Workman from '../../assets/images/Workman.png';
-import Arrow from '../icons/Arrow';
+import React, { useRef } from 'react';
+import { Arrow } from '../icons';
 import Vector from '../icons/Vector';
+import { TransferData } from '../../utils/constants';
 
 interface props {
   className?: string;
 }
 
 const QuickTransfer = ({ className }: props) => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  const scrollToSection = (scrollOffset: number) => {
+    if (ref.current)
+      ref.current.scrollBy({
+        left: scrollOffset,
+        behavior: 'smooth',
+      });
+  };
+
   return (
-    <div className={className}>
+    <div className={`${className} overflow-hidden`}>
       <div className="flex justify-around items-center w-full lg:min-w-max  h-32">
-        <div className="flex flex-col items-center justify-center">
-          <img className="lg:h-16 lg:w-16" src={Livia} />
-          <h1 className="text-base text-gray-900 font-bold">Livia Bator</h1>
-          <h1 className="text-slate-400 font-semibold text-[15px]">CEO</h1>
+        <button
+          onClick={() => scrollToSection(-80)}
+          className="h-12 w-12 bg-white  rounded-full flex items-center justify-center shadow-slate-500 shadow-2xl"
+        >
+          <Arrow className="transform scale-x-[-1]" />
+        </button>
+        <div
+          ref={ref}
+          className="flex md:w-48  space-x-4 overflow-x-auto   px-4"
+        >
+          {TransferData.map((user, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center shrink-0  "
+            >
+              <img
+                className="lg:h-16 lg:w-16 rounded-full"
+                src={user.img}
+                alt={user.name}
+              />
+              <h1 className="mt-2 font-medium">{user.name}</h1>
+              <h1 className="text-slate-400 text-base">{user.role}</h1>
+            </div>
+          ))}
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <img className="lg:h-16 lg:w-16" src={Randy} />
-          <h1>Randy Press</h1>
-          <h1 className="text-slate-400 text-base">Director</h1>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <img className="lg:h-16 lg:w-16" src={Workman} />
-          <h1>Workman</h1>
-          <h1 className="text-slate-400 text-base">Designer</h1>
-        </div>
-        <div className="h-12 w-12 bg-white rounded-full flex items-center justify-center shadow-slate-500 shadow-2xl">
+
+        <button
+          onClick={() => scrollToSection(80)}
+          className="h-12 w-12 bg-white  rounded-full flex items-center justify-center shadow-slate-500 shadow-2xl"
+        >
           <Arrow />
-        </div>
+        </button>
       </div>
       <div className="h-12 w-full flex items-center justify-around lg:min-w-max">
         <h1 className="text-slate-400 font-normal text-base lg:text-xm">

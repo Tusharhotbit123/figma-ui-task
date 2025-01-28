@@ -66,7 +66,7 @@ const Dashboard = () => {
         <h1 className="font-semibold text-base text-indigo-900 w-full pl-3 pb-3">
           Quick Transfer
         </h1>
-        <QuickTransfer className="bg-white w-full lg:min-w-max h-60 rounded-3xl flex flex-col items-center justify-around" />
+        <QuickTransfer className="bg-white w-full  h-60 rounded-3xl flex flex-col items-center justify-around" />
       </div>
       <div className=" md:col-span-1 lg:col-span-2 flex flex-col items-center    ">
         <h1 className="font-semibold text-base text-indigo-900 w-full pl-3 pb-3">

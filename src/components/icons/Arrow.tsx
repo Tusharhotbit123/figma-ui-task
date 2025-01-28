@@ -1,8 +1,9 @@
 import { IconProps } from './type';
 
-const Arrow = ({ width = '20', height = '20' }: IconProps) => {
+export const Arrow = ({ width = '20', height = '20',className }: IconProps) => {
   return (
     <svg
+      className={className}
       width={width}
       height={height}
       viewBox="0 0 9 15"
@@ -14,4 +15,4 @@ const Arrow = ({ width = '20', height = '20' }: IconProps) => {
   );
 };
 
-export default Arrow;
+
