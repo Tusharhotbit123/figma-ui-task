@@ -1,3 +1,4 @@
+import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { ChartOptions } from 'chart.js';
 import 'chart.js/auto';
@@ -93,4 +94,4 @@ const PieChart = () => {
   );
 };
 
-export default PieChart;
+export default React.memo(PieChart);

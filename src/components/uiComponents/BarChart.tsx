@@ -1,3 +1,4 @@
+import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import { ChartOptions, Chart } from 'chart.js';
 import 'chart.js/auto';
@@ -167,4 +168,4 @@ const BarChart = ({ className }: className) => {
   );
 };
 
-export default BarChart;
+export default React.memo(BarChart);

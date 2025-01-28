@@ -1,3 +1,4 @@
+import React from 'react';
 import Livia from '../../assets/images/Livia.png';
 import Randy from '../../assets/images/Randy.png';
 import Workman from '../../assets/images/Workman.png';
@@ -47,4 +48,4 @@ const QuickTransfer = ({ className }: props) => {
   );
 };
 
-export default QuickTransfer;
+export default React.memo(QuickTransfer);

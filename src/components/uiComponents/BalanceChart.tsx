@@ -1,3 +1,4 @@
+import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { ChartOptions, ScriptableContext } from 'chart.js';
 import 'chart.js/auto';
@@ -121,4 +122,4 @@ const LineChart = ({ className }: props) => {
   );
 };
 
-export default LineChart;
+export default React.memo(LineChart);

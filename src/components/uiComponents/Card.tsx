@@ -1,3 +1,4 @@
+import React from 'react';
 import Chip from '../icons/Chip';
 import Ellipse from '../icons/Ellipse';
 
@@ -58,4 +59,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default React.memo(Card);
