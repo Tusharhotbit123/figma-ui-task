@@ -5,7 +5,7 @@ const NavInput = () => {
     <div className="w-full flex justify-center items-center">
       <label className="rounded-full w-full flex bg-gray-100 ">
         <p className="mt-3 ml-3 pl-2">
-          <Glass height="16" width="16" color="text-customBlue" />
+          <Glass height="16" width="16" color="text-primary" />
         </p>
         <input
           className="h-10 bg-gray-100 w-full pl-2 focus:ring-0 focus:outline-none text-slate-400 rounded-3xl font-normal"

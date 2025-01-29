@@ -28,9 +28,9 @@ const Dashboard = () => {
         </h1>
 
         <Card
-          className="bg-white text-customBlue border border-slate-300"
+          className="bg-white text-primary border border-slate-300"
           footer="border-t border-slate-300"
-          name="text-customBlue"
+          name="text-primary"
           icon={<NewChip />}
         />
       </div>

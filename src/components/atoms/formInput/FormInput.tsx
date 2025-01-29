@@ -23,7 +23,7 @@ const FormInput = ({
         <label className="min-w-max  flex flex-col text-xs text-gray-900 mx-4">
           {label}
           <input
-            className="w-full h-10 border rounded-xl mt-2 focus:ring-0 focus:outline-none border-sky-100 pl-4 placeholder-customBlue  font-normal "
+            className="w-full h-10 border rounded-xl mt-2 focus:ring-0 focus:outline-none border-sky-100 pl-4 placeholder-primary  font-normal "
             type={type}
             {...register(name, validation)}
             placeholder={placeholder}
@@ -31,7 +31,11 @@ const FormInput = ({
         </label>
       </div>
       <div className="ml-8 mt-1 flex justify-start  w-full">
-        <p>{errorMessage && <p className="text-red-700 text-xs">{errorMessage}</p>}</p>
+        <p>
+          {errorMessage && (
+            <p className="text-red-700 text-xs">{errorMessage}</p>
+          )}
+        </p>
       </div>
     </div>
   );

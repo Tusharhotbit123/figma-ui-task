@@ -3,7 +3,7 @@ import { IconProps } from './type';
 export const Glass = ({
   width = '20',
   height = '20',
-  color = 'text-customBlue',
+  color = 'text-primary',
 }: IconProps) => {
   return (
     <svg

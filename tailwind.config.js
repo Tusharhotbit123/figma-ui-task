@@ -7,7 +7,7 @@ export default {
         lg: '28px',
       },
       colors: {
-        customBlue: '#718EBF',
+        primary: '#718EBF',
         customGray: '#B1B1B1',
         customLightBlue: '#E7EDFF',
         customVibrantBlue: '#396AFF',

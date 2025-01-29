@@ -22,7 +22,7 @@ const QuickTransfer = ({ className }: props) => {
     <div className={`${className} overflow-hidden`}>
       <div className="flex justify-around items-center w-full lg:min-w-max  h-32">
         <button
-          onClick={() => scrollToSection(-80)}
+          onClick={() => scrollToSection(-100)}
           className="h-12 w-12 bg-white  rounded-full flex items-center justify-center shadow-slate-500 shadow-2xl"
         >
           <Arrow className="transform scale-x-[-1]" />
@@ -48,7 +48,7 @@ const QuickTransfer = ({ className }: props) => {
         </div>
 
         <button
-          onClick={() => scrollToSection(80)}
+          onClick={() => scrollToSection(100)}
           className="h-12 w-12 bg-white  rounded-full flex items-center justify-center shadow-slate-500 shadow-2xl"
         >
           <Arrow />

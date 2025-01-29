@@ -3,7 +3,7 @@ import { IconProps } from './type';
 export const Settings = ({
   width = '25',
   height = '25',
-  color = 'text-customBlue',
+  color = 'text-primary',
 }: IconProps) => {
   return (
     <svg
