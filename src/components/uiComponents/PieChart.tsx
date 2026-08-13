@@ -12,7 +12,7 @@ const PieChart = () => {
     beforeDraw(chart: Chart<'doughnut'>) {
       let sliceThicknessPixel = [230, 195, 230, 270];
       sliceThicknessPixel.forEach((thickness, index) => {
-        chart.getDatasetMeta(0).data[index].outerRadius =
+        (chart.getDatasetMeta(0).data[index] as any).outerRadius =
           (chart.chartArea.width / thickness) * 100;
       });
     },
